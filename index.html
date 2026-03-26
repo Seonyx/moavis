@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maureen Avis | Official Author Site</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Cormorant+Garamond:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0d0d0d; /* Pitch Black */
+            --text-color: #e0e0e0; /* Off-White */
+            --accent-color: #555; /* Neutral Dark Gray */
+            --glow-color: #f1c40f; /* Amber glow when author is "thinking" */
+            --serif-font: 'Cormorant Garamond', serif;
+            --typewriter-font: 'Special Elite', cursive;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--serif-font);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* The main "stage" container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* --- THE HEADER: Reclusive Vibe --- */
+        header {
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-family: var(--typewriter-font);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        /* --- AUTHOR "AVATAR" (Generated AI Portrait) --- */
+        /* Since you have AI, generate a single, compelling, shadowed photo
+           named 'author-portrait.jpg' and put it in the same GitHub folder. */
+        .portrait {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            margin: 0 auto 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            background-size: cover;
+            background-position: center;
+            /* Placeholder background color until you add an image */
+            background-color: #333; 
+        }
+
+        /* --- THE NOVELS --- */
+        .work-listing {
+            text-align: left;
+            margin-bottom: 80px;
+        }
+
+        .work-listing h2 {
+            font-family: var(--typewriter-font);
+            font-size: 2rem;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .novel {
+            margin-bottom: 40px;
+        }
+
+        .novel-title {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .novel-byline {
+            font-style: italic;
+            color: #aaa;
+            margin: 5px 0 15px;
+        }
+
+        .novel-synopsis {
+            color: #ccc;
+        }
+
+        /* --- THE INTERACTION ZONE (The 'Active' Hive Off) --- */
+        #interaction-zone {
+            background-color: #1a1a1a;
+            border: 1px solid var(--accent-color);
+            padding: 40px;
+            margin-top: auto;
+            border-radius: 8px;
+        }
+
+        #interaction-zone h3 {
+            font-family: var(--typewriter-font);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-color);
+            margin-top: 0;
+        }
+
+        .cta-text {
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        /* The primary "hive off" button to Discord */
+        .discord-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--glow-color); /* Amber/Gold looks cool */
+            border: 2px solid var(--glow-color);
+            padding: 15px 30px;
+            font-family: var(--typewriter-font);
+            font-size: 1.2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .discord-button:hover {
+            background-color: var(--glow-color);
+            color: #111;
+            box-shadow: 0 0 15px rgba(241, 196, 15, 0.4);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+
+        /* Mobile optimization */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            #interaction-zone { padding: 20px; }
+            .discord-button { font-size: 1rem; padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Maureen Avis</h1>
+            <div class="subtitle">A brief stay, a longer shadow.</div>
+        </header>
+
+        <main>
+            <div class="portrait" style="background-image: url('author-portrait.jpg');"></div>
+
+            <section class="work-listing">
+                <h2>Novels</h2>
+
+                <div class="novel">
+                    <p class="novel-title">Title of Your First Book</p>
+                    <p class="novel-byline">Available [DATE] or [NOW]</p>
+                    <p class="novel-synopsis">Provide a compelling, atmospheric two-sentence synopsis of your first novel here. Keep it brief; the core mystery should pull them in.</p>
+                </div>
+
+                <div class="novel">
+                    <p class="novel-title">Title of Your Second Book</p>
+                    <p class="novel-byline">Coming [DATE]</p>
+                    <p class="novel-synopsis">A brief summary of your second work, linking it thematically to your universe.</p>
+                </div>
+            </section>
+        </main>
+
+        <div id="interaction-zone">
+            <h3>Enter The Study</h3>
+            <p class="cta-text">If you have questions about the work, the world, or the shadows between the lines, the Author is available. Please speak clearly; the mind is old and the answers are deliberate.</p>
+            
+            <a href="https://discord.gg/YOUR_DISCORD_SERVER_INVITE_LINK" class="discord-button">
+                [ Talk to the Author ]
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Maureen Avis / Works hosted on Cloudflare Pages / All persona interaction handled asynchronously via local Llama intelligence.
+    </footer>
+
+</body>
+</html>
