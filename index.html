@@ -93,6 +93,26 @@
 
         .novel {
             margin-bottom: 40px;
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .novel-cover {
+            flex-shrink: 0;
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid var(--accent-color);
+        }
+
+        .novel-text {
+            flex: 1;
+        }
+
+        @media (max-width: 600px) {
+            .novel { flex-direction: column; }
+            .novel-cover { width: 80px; height: 120px; }
         }
 
         .novel-title {
@@ -188,15 +208,30 @@
                 <h2>Novels</h2>
 
                 <div class="novel">
-                    <p class="novel-title">Title of Your First Book</p>
-                    <p class="novel-byline">Available [DATE] or [NOW]</p>
-                    <p class="novel-synopsis">Provide a compelling, atmospheric two-sentence synopsis of your first novel here. Keep it brief; the core mystery should pull them in.</p>
+                    <img class="novel-cover" src="cover-mayfly.jpg" alt="The Mayfly Mutiny cover">
+                    <div class="novel-text">
+                        <p class="novel-title">The Mayfly Mutiny</p>
+                        <p class="novel-byline">Coming mid-April 2026</p>
+                        <p class="novel-synopsis">A dystopian science fiction novel about power, faith and resistance in a Martian colony built on rigid inequality. When caregiver Marnette Croft begins to question the truths she has always lived by, she finds herself pulled toward a dangerous movement that could change the future of the colony — if it doesn't destroy her first.</p>
+                    </div>
                 </div>
 
                 <div class="novel">
-                    <p class="novel-title">Title of Your Second Book</p>
-                    <p class="novel-byline">Coming [DATE]</p>
-                    <p class="novel-synopsis">A brief summary of your second work, linking it thematically to your universe.</p>
+                    <img class="novel-cover" src="cover-chilli.jpg" alt="Chilli Racers cover">
+                    <div class="novel-text">
+                        <p class="novel-title">Chilli Racers</p>
+                        <p class="novel-byline">Coming Summer 2026</p>
+                        <p class="novel-synopsis">A near-future dystopian thriller about seduction, mentorship, and the cost of authenticity. In a world where internal combustion engines are banned and medical implants can pull you back from death, Flynn is offered something rarer than either: the feeling of being truly alive. All it will cost him is everything he thought he was.</p>
+                    </div>
+                </div>
+
+                <div class="novel">
+                    <img class="novel-cover" src="cover-carrier.jpg" alt="Carrier to Yesterday cover">
+                    <div class="novel-text">
+                        <p class="novel-title">Carrier to Yesterday</p>
+                        <p class="novel-byline">Coming Autumn 2026</p>
+                        <p class="novel-synopsis">A science fiction novel about curiosity, chance, and consequences, as two students chase an obscure wrinkle in electromagnetic theory that seems to let a radio signal arrive before it's sent. When their late-night experiments start producing results that shouldn't be possible, they're drawn into a risky attempt to turn physics into an advantage — only to discover that borrowing time comes with a price they never calculated.</p>
+                    </div>
                 </div>
             </section>
         </main>
