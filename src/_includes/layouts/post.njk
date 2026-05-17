@@ -25,6 +25,10 @@
                 </div>
             </header>
 
+            {% if image %}
+            <img src="{{ image }}" alt="{{ title }}" style="width:100%;height:auto;margin-bottom:32px;border:1px solid var(--accent-color);">
+            {% endif %}
+
             <div class="post-body">
                 {{ content | safe }}
             </div>
