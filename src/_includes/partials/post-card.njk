@@ -1,0 +1,16 @@
+<article class="post-card">
+    <h2 class="post-card-title">
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h2>
+    <div class="post-card-meta">
+        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        {% if post.data.categories and post.data.categories.length %}
+         &mdash;
+        {% for cat in post.data.categories %}
+            <a href="/blog/category/{{ cat }}/">{{ cat | categoryDisplayName }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+        {% endif %}
+    </div>
+    <p class="post-card-excerpt">{{ post.data.excerpt | autoExcerpt(post.templateContent) }}</p>
+    <a class="post-card-readmore" href="{{ post.url }}">Read more &rarr;</a>
+</article>

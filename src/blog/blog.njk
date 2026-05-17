@@ -1,0 +1,45 @@
+---
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+title: "Blog"
+---
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/blog.css">
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="blog-container">
+    <main class="blog-main" data-pagefind-body>
+        <h2 class="archive-heading">
+            {% if pagination.pageNumber > 0 %}Blog — Page {{ pagination.pageNumber + 1 }}{% else %}Blog{% endif %}
+        </h2>
+
+        {% for post in posts %}
+            {% set post = post %}
+            {% include "partials/post-card.njk" %}
+        {% endfor %}
+
+        {% if pagination.pages.length > 1 %}
+        <nav class="pagination" aria-label="Blog pagination">
+            {% if pagination.href.previous %}
+                <a href="{{ pagination.href.previous }}">&larr; Newer</a>
+            {% endif %}
+            <span class="current">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
+            {% if pagination.href.next %}
+                <a href="{{ pagination.href.next }}">Older &rarr;</a>
+            {% endif %}
+        </nav>
+        {% endif %}
+    </main>
+
+    <aside class="blog-sidebar" data-pagefind-ignore>
+        {% include "partials/sidebar.njk" %}
+    </aside>
+</div>
+{% endblock %}

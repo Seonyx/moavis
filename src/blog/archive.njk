@@ -1,0 +1,32 @@
+---
+pagination:
+  data: collections.postsByYearMonth
+  size: 1
+  alias: archiveGroup
+permalink: "/blog/archive/{{ archiveGroup.year }}/{{ archiveGroup.month }}/"
+---
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/blog.css">
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+{% endblock %}
+
+{% set archiveTitle = "Posts from " + (archiveGroup.posts[0].date | monthName) + " " + archiveGroup.year %}
+
+{% block content %}
+<div class="blog-container">
+    <main class="blog-main" data-pagefind-body>
+        <h2 class="archive-heading">{{ archiveTitle }}</h2>
+
+        {% for post in archiveGroup.posts %}
+            {% set post = post %}
+            {% include "partials/post-card.njk" %}
+        {% endfor %}
+    </main>
+
+    <aside class="blog-sidebar" data-pagefind-ignore>
+        {% include "partials/sidebar.njk" %}
+    </aside>
+</div>
+{% endblock %}

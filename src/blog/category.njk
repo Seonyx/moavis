@@ -1,0 +1,33 @@
+---
+pagination:
+  data: collections.postsByCategory
+  size: 1
+  alias: catSlug
+permalink: "/blog/category/{{ catSlug }}/"
+---
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/blog.css">
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+{% endblock %}
+
+{% set categoryPosts = catSlug | postsInCategory %}
+
+{% block content %}
+
+<div class="blog-container">
+    <main class="blog-main" data-pagefind-body>
+        <h2 class="category-heading">Category: {{ catSlug | categoryDisplayName }}</h2>
+
+        {% for post in categoryPosts %}
+            {% set post = post %}
+            {% include "partials/post-card.njk" %}
+        {% endfor %}
+    </main>
+
+    <aside class="blog-sidebar" data-pagefind-ignore>
+        {% include "partials/sidebar.njk" %}
+    </aside>
+</div>
+{% endblock %}

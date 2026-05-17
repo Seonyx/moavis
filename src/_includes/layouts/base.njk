@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.ga }}');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if title %}{{ title }} — {{ site.name }}{% else %}{{ site.name }} | Official Author Site{% endif %}</title>
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="{% block ogtype %}website{% endblock %}">
+    <meta property="og:image" content="{{ site.url }}{% if ogImage %}{{ ogImage }}{% else %}{{ site.defaultOgImage }}{% endif %}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+    <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}{% if ogImage %}{{ ogImage }}{% else %}{{ site.defaultOgImage }}{% endif %}">
+
+    <!-- RSS autodiscovery -->
+    <link rel="alternate" type="application/atom+xml" title="{{ site.name }} Blog" href="{{ site.url }}{{ site.feedUrl }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Cormorant+Garamond:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="/assets/css/site.css">
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+
+    {% include "partials/header.njk" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "partials/footer.njk" %}
+
+</body>
+</html>

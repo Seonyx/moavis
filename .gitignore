@@ -1,2 +1,7 @@
 .DS_Store
 Thumbs.db
+_site/
+node_modules/
+.cache/
+.11ty-cache/
+package-lock.json

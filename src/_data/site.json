@@ -1,0 +1,13 @@
+{
+  "name": "Maureen Avis",
+  "url": "https://moavis.nexus",
+  "description": "Official author site for Maureen Avis — dystopian and speculative fiction.",
+  "author": {
+    "name": "Maureen Avis",
+    "email": ""
+  },
+  "substackUrl": "https://maureenavis.substack.com",
+  "defaultOgImage": "/assets/images/og-default.jpg",
+  "ga": "G-9DS7ZRZEF2",
+  "feedUrl": "/blog/feed.xml"
+}

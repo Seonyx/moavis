@@ -1,0 +1,59 @@
+<div class="blog-sidebar">
+
+    <!-- Search -->
+    <div class="sidebar-section">
+        <h3>Search</h3>
+        <div id="search"></div>
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                new PagefindUI({ element: '#search', showSubResults: false });
+            });
+        </script>
+        <script src="/pagefind/pagefind-ui.js"></script>
+    </div>
+
+    <!-- Archives -->
+    <div class="sidebar-section">
+        <h3>Archives</h3>
+        {% set currentYear = "" %}
+        {% for group in collections.postsByYearMonth %}
+            {% if group.year != currentYear %}
+                {% if currentYear != "" %}</ul></details>{% endif %}
+                {% set currentYear = group.year %}
+                <details class="archive-year">
+                    <summary>{{ group.year }}</summary>
+                    <ul class="archive-months">
+            {% endif %}
+                        <li>
+                            <a href="/blog/archive/{{ group.year }}/{{ group.month }}/">
+                                {{ group.posts[0].date | monthName }}
+                            </a>
+                            <span class="archive-count">({{ group.posts | length }})</span>
+                        </li>
+        {% endfor %}
+        {% if currentYear != "" %}</ul></details>{% endif %}
+    </div>
+
+    <!-- Categories -->
+    <div class="sidebar-section">
+        <h3>Categories</h3>
+        <ul class="category-list">
+            {% for slug in collections.postsByCategory %}
+            <li>
+                <a href="/blog/category/{{ slug }}/">
+                    {{ slug | categoryDisplayName }}
+                </a>
+                <span class="archive-count">({{ slug | postsInCategory | length }})</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="sidebar-section sidebar-newsletter">
+        <h3>Newsletter</h3>
+        <p>Read more of Maureen's writing and updates on Substack.</p>
+        <a href="{{ site.substackUrl }}" target="_blank" rel="noopener">[ Visit Substack ]</a>
+    </div>
+
+</div>

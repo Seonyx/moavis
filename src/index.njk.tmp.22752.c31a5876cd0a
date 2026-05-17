@@ -1,0 +1,62 @@
+---
+layout: layouts/page.njk
+---
+<div class="container">
+
+    <div class="subtitle">"A novel is never anything but a philosophy expressed in images."<br><small>― Albert Camus, Lyrical and Critical Essays</small></div>
+
+    <main>
+        <div class="portrait" style="background-image: url('/assets/images/author-portrait.jpg');"></div>
+
+        <section class="work-listing">
+            <h2>Novels</h2>
+
+            <div class="novel">
+                <img class="novel-cover" src="/assets/images/cover-mayfly.jpg" alt="The Mayfly Mutiny cover">
+                <div class="novel-text">
+                    <p class="novel-title">The Mayfly Mutiny</p>
+                    <p class="novel-byline">Available now</p>
+                    <p class="novel-synopsis">A dystopian science fiction novel about power, faith and resistance in a Martian colony built on rigid inequality. When caregiver Marnette Croft begins to question the truths she has always lived by, she finds herself pulled toward a dangerous movement that could change the future of the colony — if it doesn't destroy her first.</p>
+                    <p><a href="https://www.amazon.co.uk/dp/B0GX2Z83GD?ref=moavis_nexus"
+                           onclick="gtag('event', 'amazon_click', {
+                             'event_category': 'outbound',
+                             'event_label': 'mayfly_mutiny'
+                           }); setTimeout(function(){ window.open(this.href, '_blank'); }.bind(this), 150); return false;"
+                           style="color: var(--glow-color); text-decoration: none; font-family: var(--typewriter-font); letter-spacing: 1px;">
+                           [ Read The Mayfly Mutiny on Amazon ]
+                        </a></p>
+                </div>
+            </div>
+
+            <div class="novel">
+                <img class="novel-cover" src="/assets/images/cover-chilli.jpg" alt="Chilli Racers cover">
+                <div class="novel-text">
+                    <p class="novel-title">Chilli Racers</p>
+                    <p class="novel-byline">Coming Summer 2026</p>
+                    <p class="novel-synopsis">A near-future dystopian thriller about seduction, mentorship, and the cost of authenticity. In a world where internal combustion engines are banned and medical implants can pull you back from death, Flynn is offered something rarer than either: the feeling of being truly alive. All it will cost him is everything he thought he was.</p>
+                </div>
+            </div>
+
+            <div class="novel">
+                <img class="novel-cover" src="/assets/images/cover-carrier.jpg" alt="Carrier to Yesterday cover">
+                <div class="novel-text">
+                    <p class="novel-title">Carrier to Yesterday</p>
+                    <p class="novel-byline">Coming Autumn 2026</p>
+                    <p class="novel-synopsis">A science fiction novel about curiosity, chance, and consequences, as two students chase an obscure wrinkle in electromagnetic theory that seems to let a radio signal arrive before it's sent. When their late-night experiments start producing results that shouldn't be possible, they're drawn into a risky attempt to turn physics into an advantage — only to discover that borrowing time comes with a price they never calculated.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="interaction-zone">
+        <h3>Enter The Study</h3>
+        <p class="cta-text">If you have questions about the work, the world, or the shadows between the lines, the Author is available. Please speak clearly; the mind is old and the answers are deliberate.</p>
+
+        <a href="https://discord.gg/hXXyQsQYG8" class="discord-button">
+            [ Talk to the Author ]
+        </a>
+
+        <p style="margin-top: 24px; font-size: 0.9rem; color: #888;">For business enquiries you can reach my agent at <a href="https://www.seonyx.com/contact" style="color: #888;">seonyx.com/contact</a></p>
+    </div>
+
+</div>

@@ -1,0 +1,50 @@
+/* Shared site primitives — loaded on every page via base.njk */
+
+:root {
+    --bg-color: #0d0d0d;
+    --text-color: #e0e0e0;
+    --accent-color: #555;
+    --glow-color: #f1c40f;
+    --serif-font: 'Cormorant Garamond', serif;
+    --typewriter-font: 'Special Elite', cursive;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--serif-font);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+header {
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-family: var(--typewriter-font);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin: 0;
+}
+
+footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+}
