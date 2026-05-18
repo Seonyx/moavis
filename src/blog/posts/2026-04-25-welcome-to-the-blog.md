@@ -1,6 +1,6 @@
 ---
 title: "Welcome to the Blog"
-date: 2026-05-17
+date: 2026-04-25
 categories: ["news-and-updates"]
 excerpt: "The blog is now open. A place to think on the page about writing, publishing, and everything between the ideas."
 draft: false
