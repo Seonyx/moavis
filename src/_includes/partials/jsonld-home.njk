@@ -1,0 +1,43 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": {{ site.name | dump | safe }},
+      "url": "{{ site.url }}"
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#author",
+      "name": {{ site.author.name | dump | safe }},
+      "url": "{{ site.url }}",
+      "sameAs": [
+        "{{ site.substackUrl }}"
+      ]
+    },
+    {
+      "@type": "Book",
+      "name": "The Mayfly Mutiny",
+      "author": { "@id": "{{ site.url }}/#author" },
+      "url": "https://www.amazon.co.uk/dp/B0GX2Z83GD?ref=moavis_nexus",
+      "genre": "Science Fiction",
+      "description": "A dystopian science fiction novel about power, faith and resistance in a Martian colony built on rigid inequality."
+    },
+    {
+      "@type": "Book",
+      "name": "Chilli Racers",
+      "author": { "@id": "{{ site.url }}/#author" },
+      "genre": "Science Fiction",
+      "description": "A near-future dystopian thriller about seduction, mentorship, and the cost of authenticity."
+    },
+    {
+      "@type": "Book",
+      "name": "Carrier to Yesterday",
+      "author": { "@id": "{{ site.url }}/#author" },
+      "genre": "Science Fiction",
+      "description": "A science fiction novel about curiosity, chance, and consequences, as two students chase an obscure wrinkle in electromagnetic theory."
+    }
+  ]
+}
+</script>
