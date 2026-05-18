@@ -17,6 +17,7 @@ module.exports = function (eleventyConfig) {
   // --- Passthrough ---
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
+  eleventyConfig.addPassthroughCopy({ "src/favicon_io": "/" });
 
   // --- Date filters ---
   eleventyConfig.addFilter("readableDate", (date) =>
