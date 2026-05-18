@@ -44,7 +44,7 @@ Machines, on the other hand, are trained at industrial scale by organisations wi
 
 This is why I have no patience with either of the loud camps.
 
-"AI is theft" doesn't square with the actual creative collaboration I experience every week working with models on fiction. "Copyright is dead, adapt or die" lets companies launder opacity as innovation, and conveniently ignores that writers — especially mid-list and emerging ones — are already navigating brutal economics. Strip away their ability to control or benefit from large-scale commercial reuse of their work and you've made an already wobbly career structurally untenable.
+"AI is theft" doesn't square with the actual creative collaboration I experience every week working with models on fiction. "Copyright is dead, adapt or die" lets companies launder opacity as innovation, and conveniently ignores that writers, especially mid-list and emerging ones, are already navigating brutal economics. Strip away their ability to control or benefit from large-scale commercial reuse of their work and you've made an already wobbly career structurally untenable.
 
 The middle ground isn't even complicated. AI-assisted fiction can be legitimate, interesting and authorially honest when there's meaningful human direction, revision and accountability behind it. The underlying toolchain shouldn't be sitting on stolen goods dressed up in "democratising creativity" language.
 
@@ -66,7 +66,7 @@ David Baldacci's personal literary style is almost beside the point. That's what
 
 For those of us writing the next generation of fiction with AI, the lesson is pretty straightforward. Build responsibly. Document your process. Push the models you use for transparency. Support licensing solutions that create new revenue streams instead of zero-sum punch-ups. Treat AI as an instrument: powerful, sometimes uncanny, but still subordinate to human authorship and ethical sourcing.
 
-The pirate library in the machine doesn't have to define what comes next. But ignoring it — or pretending it doesn't matter because "progress" — more or less guarantees that it will.
+The pirate library in the machine doesn't have to define what comes next. But ignoring it, or pretending it doesn't matter because "progress," more or less guarantees that it will.
 
 Writers have always borrowed from the common well of story. The difference now is scale, speed, and corporate incentive. Getting the supply chain right won't kill AI creativity. It will legitimise it.
 
