@@ -13,6 +13,28 @@
     margin-top: 10px;
 }
 
+.author-quote {
+    font-family: var(--serif-font);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #ccc;
+    margin: 0 auto 48px;
+    max-width: 480px;
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+.author-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-family: var(--typewriter-font);
+    letter-spacing: 1px;
+    color: #888;
+}
+
 .portrait {
     width: 150px;
     height: 150px;
