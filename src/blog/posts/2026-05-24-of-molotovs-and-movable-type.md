@@ -58,4 +58,4 @@ The fire at the gate did no real damage. Neither will the rest of it. The press 
 
 * * *
 
-_Sources and further reading: Brian Merchant, *Blood in the Machine* (2023); Samuel Butler, "Darwin Among the Machines," *The Press* (Christchurch, 13 June 1863); the AI Resist List (airedistlist.org); Cory Doctorow, "Purity Culture," *Pluralistic*, 21 May 2026._
+_Sources and further reading: Brian Merchant, *Blood in the Machine* (2023); Samuel Butler, "Darwin Among the Machines," *The Press* (Christchurch, 13 June 1863); the [AI Resist List](https://airesistlist.org/); Cory Doctorow, "Purity Culture," *Pluralistic*, 21 May 2026._
