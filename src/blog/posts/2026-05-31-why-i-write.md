@@ -1,0 +1,31 @@
+---
+title: "Why I Write"
+date: 2026-05-31
+categories:
+  - writing-craft
+excerpt: "Every author needs an answer to why they write. Mine involves Orwell, Le Guin, Jurassic Park, and the disappearing freedoms we can't afford to lose."
+image: "/assets/images/posts/AlienWithRaygun.jpg"
+draft: false
+---
+
+The question of why one writes is something every author should have a prepared answer to. People are inevitably going to ask, so it is best to know the answer in advance. Also, in the manner of a business plan, it is essential to know the goal of any activity to which one is devoting considerable time and resources. Here, then, I intend to address this question.
+
+I asked ChatGPT to see how other authors had answered it, and came back with a list that was both impressive and somewhat humbling. George Orwell said, "Desire to push the world in a certain direction…" Toni Morrison said, "If you find a book you really want to read but it hasn't been written yet, then you must write it." Perhaps most prescient of all, Ursula K. Le Guin said, "We'll need writers who can remember freedom."
+
+These are the three that resonated most with me. I can't remember the first science fiction book I actually read. I was probably exposed to the genre first through television, and fell in love with the golden age of 1950s and 1960s sci-fi, with robots, aliens and UFOs, which steered me in the direction of books when I got a little older. It was probably H. G. Wells or Jules Verne that I first read, since these were the sort of classics my parents had around the house.
+
+An early read that sticks in the mind is Aldous Huxley's *Brave New World*, which I read again just a few months ago. This really stood out to me because the author was trying to tell us something beyond the story. I began to see a split in the way stories were being told. Some were calling themselves sci-fi novels, but they were really just "Western horse operas with ray guns," with nothing to say beyond good guys fight bad guys, good guys win. Hollywood is full of this kind of slop, which seems to do nothing more than reinforce a patriarchal narrative, a propaganda shoot-up-fest for a robber-baron culture.
+
+Good sci-fi, it seemed, was aiming to educate and inform as well as entertain. A really good example of this, one that was published when I was young and was hugely successful commercially, was *Jurassic Park* by Michael Crichton. Before that book came out, I would think 99% of people would have had no concept of the idea of reanimating extinct species from DNA. Today, it is a concept most people have considered, almost entirely thanks to Crichton's book. Not only did he introduce the scientific concept into the public consciousness, he also asked the question that scientists never do: whether they should do something just because they can. This "Prometheans in the lab" concept is one of my favourite themes to explore in fiction. It has an unspoken flip side, which is that the universe is an equalising force that avariciously tries to restore balance whenever we try to stack the chips in our favour. At some basic level we all know this to be true, and it is probably the seat of superstition and a belief in the almighty that persists however much we try to banish it with logic and knowledge.
+
+This is, I think, what Orwell meant when he talked about pushing the world in a certain direction. Fiction can be a moral force, a way of asking the questions that power would prefer left unasked. And it frankly scares the living daylights out of me that people can cast a vote for a politician without seemingly giving the slightest thought to the events that may unfold as a result. Politics these days could largely be called the business of persuading people to vote against their own interests. I don't want to dive too deep into politics here, although I easily could, but there is a quote that frames where the West is at the moment rather precisely:
+
+> "The modern conservative is engaged in one of man's oldest exercises in moral philosophy; that is, the search for a superior moral justification for selfishness."
+>
+> ― John Kenneth Galbraith
+
+Since the adoption of Chicago School economics by Reagan and Thatcher, the voice for selfishness has shouted louder than all others, and that seems to be behind many of the worsening problems we see in front of us. It seems to me that the scariest part of increasing wealth and income inequality is that every day the poor get poorer, they also become increasingly disenfranchised. Few of us have been in the position of experiencing real poverty. If we are short at the end of the month, we put the weekly shop on the credit card and move on. This is not how it is for absolute poverty. What poverty does is remove your choices, one by one, until your options become: break the law or die. As we accelerate towards a surveillance society where cash is banned and Big Brother knows your every move, the former of those two options will also, for all practical purposes, be removed. This is the territory my fiction keeps returning to, not as dystopian wallpaper, but as a genuine attempt to map where these pressures lead and what it might cost us to resist them.
+
+This is why I agree passionately with Ursula K. Le Guin that we will need writers who can remember freedom, because it is disappearing fast.
+
+However it's not all doom and gloom. I believe in the power of the human spirit to overcome all adversity. The future is a set of problems to be solved. As a sci-fi writer I aim to describe the most important of these problems. My job is to imagine the pressures, the compromises, the disappearing freedoms, and then smuggle those questions into stories people might actually want to read. I may not be in the same league as Orwell, Morrison or Le Guin, but I understand the impulse they describe. I write because there are books I have looked for and not found, stories that take the world seriously, that don't flinch from where things are heading, but that still believe in the capacity of ordinary people to push back. I write because freedom needs defenders. And I write not merely against the direction in which the world is being accelerated, but for the world that becomes possible if we find the courage to resist it.
