@@ -14,7 +14,7 @@ This week I found a writer on TikTok who openly admits to using AI, which in aut
 
 That phrase stays where it is. I'll come back to why.
 
-The writer is Katri Manninen, a Finnish screenwriter who posts as @katrifromfinland on TikTok. By her own account she has spent a long time in television, film and publishing, and is now a doctoral student looking at AI and writing, so she is not some chancer who found ChatGPT last Tuesday and declared herself a novelist. What caught my attention was not that she uses AI. Plenty of writers do, though most of them mention it the way you might admit to a minor shoplifting offence. What interested me was where she draws her line.
+The writer is Katri Manninen, a Finnish screenwriter who posts as @katrifromfinland. By her own account she has spent a long time in television, film and publishing, and is now a doctoral student looking at AI and writing, so she is not some chancer who found ChatGPT last Tuesday and declared herself a novelist. What caught my attention was not that she uses AI. Plenty of writers do, though most of them mention it the way you might admit to a minor shoplifting offence. What interested me was where she draws her line.
 
 Across a run of short videos she talks about using AI for more or less every practical part of the job except the one that matters most to her, which is the original idea. She is not asking the machine to dream for her. She uses it after the dreaming is done.
 
