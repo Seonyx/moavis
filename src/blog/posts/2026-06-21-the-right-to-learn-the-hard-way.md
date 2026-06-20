@@ -1,0 +1,31 @@
+---
+title: "The Right to Learn the Hard Way"
+date: 2026-06-21
+categories:
+  - ai-and-craft
+excerpt: "When a nine-year-old can't explain evaporation but her homework is immaculate, you have the Norway problem in miniature."
+image: "/assets/images/posts/AIban1.jpg"
+draft: false
+---
+
+*Norway is keeping AI out of its youngest classrooms, and it may be onto something.*
+
+A friend's daughter, who is nine, showed me her science homework the other week with the quiet pride of someone unveiling a finished cathedral. It was about the water cycle, and it was very good. Too good, if anything. The sentences had that buffed, frictionless quality you start to recognise once you have seen enough of it, the prose equivalent of a hotel lobby. I asked her what evaporation was. She thought about it for a moment, said she wasn't sure, and added that the computer knew.
+
+Norway has just decided to do something about that, and the something is more interesting than the headlines suggest. From the new school year in late August, children aged six to thirteen will, as a general rule, not use generative AI in school at all. Pupils between fourteen and sixteen may use it, but only with a teacher watching over their shoulder. The oldest are expected to learn to use it sensibly, on the reasonable grounds that they are about to become adults who have to. The word everyone reached for was "ban," which is fair enough for the youngest and fairly misleading for everyone else. What Norway has actually built is a ladder.
+
+The prime minister, Jonas Gahr Støre, put the case plainly. The most important thing in school, he said, is that children learn to read, write and do maths, and AI raises the risk that they skip the steps where that learning happens (Reuters). The policy sits on top of a smartphone ban Norway brought in two years ago, after test scores slid, which tells you the direction of travel. This is a country that has decided some technologies are better kept out of the room while the foundations are still being poured.
+
+It is worth asking what reading and writing and arithmetic are actually for, because the answer is less obvious than it looks. We tend to talk about them as outputs: a paragraph produced, a sum solved, a worksheet handed in. But the paragraph was never really the point. The point was the small, often tedious process by which a child learns to hold an idea still long enough to look at it properly and to notice when it has gone wrong. The paragraph is just the residue of all that. A machine can hand you the residue without the process, which is a bit like being given someone else's ash and told you have had the fire.
+
+This is the distinction the Norwegians seem to be reaching for, even if they have not put it in quite these words. There is a difference between an answer and an education. The first can be generated in seconds. The second needs practice, and mistakes, and a fair amount of boredom, and the experience of writing a genuinely dreadful first sentence and having to work out why it is dreadful. You cannot outsource that and still have it. A child who types a question and gets back a polished reply has acquired an answer. Whether they have acquired anything else depends entirely on what happens next, and for a six-year-old, what happens next is usually nothing.
+
+I have been turning over something the economist Carl Benedikt Frey wrote recently about the self-service economy. His argument is that technology often does not replace a worker with a machine. It hands the customer the tools to do the worker's job, and the labour quietly vanishes from the official picture. You scan your own shopping and book your own flights and become your own travel agent without ever noticing you have been promoted. There is a version of this waiting in the classroom. A school that hands a child an answer-generator and lets them certify their own learning has turned education into self-service. The visible product still gets made. The invisible work, the bit that was the whole purpose, goes missing, and nobody is quite sure at what point it left.
+
+Now, the obvious objection, and it is a good one. Children will meet AI everywhere else. It is already on the phones their parents cannot prise from their own hands, and it will be threaded through whatever working lives they end up with. Pretending otherwise is its own sort of negligence. Surely the responsible thing is to teach them to use it well, and early, rather than leaving them to find it unsupervised. From this angle a ban looks rather like teaching a child to swim by keeping them well away from water.
+
+I think the objection is right about the destination and wrong about the route. They do need to understand these tools, because using one competently is harder than it looks. You have to know enough to argue with the machine when it is confidently wrong, and enough to tell the difference between something that is true and something that merely sounds fluent. None of that is possible without the very foundations the ban is trying to protect. You cannot teach a child to catch a plausible falsehood before they can reliably tell plausible from true. AI literacy is real and it matters, but it is a senior subject. It comes after human literacy, not instead of it.
+
+So I find myself, a little to my own surprise, on Norway's side. Not because a ban settles anything, because it plainly doesn't. Children will still meet these tools at home. There are pupils with disabilities for whom the right software is not a shortcut but a door, and that has to be thought about properly rather than waved away. Sooner or later schools will have to teach the thing rather than simply keep it out of the room. A ban is a blunt instrument. It is at least pointed the right way, which is more than you can say for the alternative on offer, where every eight-year-old is handed a chatbot and we agree to call it personalised learning.
+
+I keep thinking about my friend's daughter and her water cycle, polished to a shine and understood by nobody at the table. She is nine. There is no hurry. She has years yet to find out what evaporation is, the slow way, by being a bit bored and a bit stuck and getting there in the end. I rather hope nobody hands her the answer before she does.
