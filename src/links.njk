@@ -1,0 +1,103 @@
+---
+title: "Links — Maureen Avis"
+excerpt: "All the ways to find, follow, and read Maureen Avis — novels, blog, Discord, and newsletter."
+eleventyExcludeFromCollections: true
+---
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/links.css">
+{% endblock %}
+
+{% block content %}
+<div class="links-page">
+
+    {# ── Header ── #}
+    <div class="links-avatar" role="img" aria-label="Portrait of Maureen Avis"></div>
+
+    <div>
+        <p class="links-name">Maureen Avis</p>
+        <p class="links-tagline">Dystopian fiction. Uncomfortable questions.</p>
+    </div>
+
+    {# ── Featured book ── #}
+    <div class="links-featured">
+        <img class="links-featured-cover"
+             src="/assets/images/cover-mayfly.jpg"
+             alt="The Mayfly Mutiny cover"
+             width="72">
+        <div>
+            <p class="links-featured-eyebrow">Available now</p>
+            <p class="links-featured-title">The Mayfly Mutiny</p>
+            <p class="links-featured-desc">A Martian colony. A social order built on predetermined lives. One caregiver who starts asking the wrong questions.</p>
+            <a href="https://www.amazon.co.uk/dp/B0GX2Z83GD?ref=moavis_links"
+               class="links-featured-btn"
+               onclick="gtag('event', 'links_click', {'event_category': 'outbound', 'event_label': 'mayfly_featured'});"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Buy The Mayfly Mutiny on Amazon">[ Read on Amazon ]</a>
+        </div>
+    </div>
+
+    {#
+        ── Link buttons ──
+        To add a link: copy one <a class="link-btn"> block, update href, label, and event_label.
+        To reorder: move blocks up or down. Top = most prominent.
+        To remove: delete the <a> block.
+        For a new social platform, change target="_blank" rel="noopener noreferrer".
+        For internal site links, remove the target and rel attributes.
+    #}
+    <div class="links-group">
+
+        <a href="/blog/"
+           class="link-btn"
+           onclick="gtag('event', 'links_click', {'event_category': 'internal', 'event_label': 'blog'});">
+            The Blog
+        </a>
+
+        <a href="https://bsky.app/profile/moavis.bsky.social"
+           class="link-btn"
+           onclick="gtag('event', 'links_click', {'event_category': 'social', 'event_label': 'bluesky'});"
+           target="_blank"
+           rel="noopener noreferrer">
+            Bluesky
+        </a>
+
+        <a href="https://www.instagram.com/maureenavisauthor/"
+           class="link-btn"
+           onclick="gtag('event', 'links_click', {'event_category': 'social', 'event_label': 'instagram'});"
+           target="_blank"
+           rel="noopener noreferrer">
+            Instagram
+        </a>
+
+        <a href="https://discord.gg/hXXyQsQYG8"
+           class="link-btn"
+           onclick="gtag('event', 'links_click', {'event_category': 'social', 'event_label': 'discord'});"
+           target="_blank"
+           rel="noopener noreferrer">
+            Discord — Enter the Study
+        </a>
+
+        <a href="/bio/"
+           class="link-btn"
+           onclick="gtag('event', 'links_click', {'event_category': 'internal', 'event_label': 'bio'});">
+            About the Author
+        </a>
+
+    </div>
+
+    {# ── Substack nudge ── #}
+    <div class="links-substack">
+        <p>Longer reads on writing, AI, and publishing — no noise.</p>
+        <a href="{{ site.substackUrl }}"
+           class="links-substack-btn"
+           onclick="gtag('event', 'links_click', {'event_category': 'social', 'event_label': 'substack'});"
+           target="_blank"
+           rel="noopener noreferrer">
+            Subscribe on Substack
+        </a>
+    </div>
+
+</div>
+{% endblock %}
