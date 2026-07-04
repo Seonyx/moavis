@@ -5,3 +5,7 @@ node_modules/
 .cache/
 .11ty-cache/
 package-lock.json
+
+# Editor/build temp files (e.g. *.md.tmp.8392.abcdef regenerated during builds)
+*.tmp
+*.tmp.*
