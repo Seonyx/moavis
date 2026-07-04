@@ -14,7 +14,10 @@ User asks to add, write, or publish a new blog post.
    - Excerpt (~155 chars, used in listings, RSS, meta description)
    - Body content (Markdown)
    - Date (default: today)
-   - Hero image (optional — if provided, save to `src/assets/images/posts/`)
+   - Hero image (optional). The user normally stages it in the filesystem
+     themselves, at `src/assets/images/posts/`. Confirm it is present there
+     rather than assuming you must copy it; reference it in front-matter as
+     `image: "/assets/images/posts/filename.jpg"`.
 
 2. **Derive the slug** — kebab-case from title, ASCII only.
    Example: "My First Post" → `my-first-post`
@@ -43,9 +46,11 @@ User asks to add, write, or publish a new blog post.
 
 6. **Wait for explicit go-ahead** before committing.
 
-7. **Commit and push** on approval:
+7. **Commit and push** on approval. Include the hero image in the same
+   commit (it is a new untracked file, so committing only the Markdown would
+   leave the image 404ing on the live site):
    ```
-   git add src/blog/posts/YYYY-MM-DD-slug.md
+   git add src/blog/posts/YYYY-MM-DD-slug.md src/assets/images/posts/filename.jpg
    git commit -m 'blog: add "Post title"'
    git push
    ```
