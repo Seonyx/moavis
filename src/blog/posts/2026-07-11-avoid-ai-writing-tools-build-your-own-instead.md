@@ -1,6 +1,6 @@
 ---
 title: "Avoid AI Writing Tools (Build Your Own Instead)"
-date: 2026-07-05
+date: 2026-07-11
 categories:
   - ai-writing-tools
 excerpt: "A novelist's case for building your own AI writing system with a frontier model, rather than buying an off-the-shelf tool that forces its habits on you."

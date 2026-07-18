@@ -1,6 +1,6 @@
 ---
 title: "AI's Quantum Objectors"
-date: 2026-07-05
+date: 2026-07-18
 categories:
   - writing-craft
 excerpt: "The AI sceptic keeps Schrödinger's cat in a box: a machine simultaneously too stupid to draft an email and clever enough to end the world. A novelist replies."
