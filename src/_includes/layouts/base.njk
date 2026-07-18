@@ -15,6 +15,7 @@
 
     <title>{% if title %}{{ title }} — {{ site.name }}{% else %}{{ site.name }} | Official Author Site{% endif %}</title>
     <meta name="description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
+    {% if keywords %}<meta name="keywords" content="{% if keywords is string %}{{ keywords }}{% else %}{{ keywords | join(', ') }}{% endif %}">{% endif %}
 
     <!-- Canonical -->
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
