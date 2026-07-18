@@ -1,5 +1,5 @@
 ---
-title: "AI's quantum Objectors"
+title: "AI's Quantum Objectors"
 date: 2026-07-05
 categories:
   - writing-craft
