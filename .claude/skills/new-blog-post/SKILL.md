@@ -18,6 +18,13 @@ User asks to add, write, or publish a new blog post.
      themselves, at `src/assets/images/posts/`. Confirm it is present there
      rather than assuming you must copy it; reference it in front-matter as
      `image: "/assets/images/posts/filename.jpg"`.
+     **Filename case matters.** Dev is Windows (case-insensitive) but
+     Cloudflare/Linux is case-sensitive, so the front-matter `image:` value
+     must match the on-disk filename *exactly*, including case, or the hero
+     404s live while looking fine locally. Check the real case with
+     `git ls-files` or `Get-ChildItem` (NOT `Test-Path`, which ignores case).
+     If they differ, rename the file (on Windows a case-only rename needs a
+     two-step through a temp name) rather than trusting the local build.
 
 2. **Derive the slug** — kebab-case from title, ASCII only.
    Example: "My First Post" → `my-first-post`
@@ -54,6 +61,9 @@ User asks to add, write, or publish a new blog post.
    git commit -m 'blog: add "Post title"'
    git push
    ```
+   After committing, confirm the image is actually tracked
+   (`git ls-files --error-unmatch <path>`). On a case-insensitive dev box a
+   `git add` with the wrong case can silently stage nothing.
 
 ## Notes
 
