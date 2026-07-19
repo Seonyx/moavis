@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects
+# Old date-stamped post URLs (mis-dated 2026-07-05) -> corrected weekly dates
+/blog/posts/2026-07-05-avoid-ai-writing-tools-build-your-own-instead/ /blog/posts/2026-07-11-avoid-ai-writing-tools-build-your-own-instead/ 301
+/blog/posts/2026-07-05-ai-quantum-objectors/ /blog/posts/2026-07-18-ai-quantum-objectors/ 301

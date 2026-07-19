@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/favicon_io": "/" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/BingSiteAuth.xml");
+  eleventyConfig.addPassthroughCopy("src/_redirects");
 
   // --- Date filters ---
   eleventyConfig.addFilter("readableDate", (date) =>
