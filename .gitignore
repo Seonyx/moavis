@@ -9,3 +9,6 @@ package-lock.json
 # Editor/build temp files (e.g. *.md.tmp.8392.abcdef regenerated during builds)
 *.tmp
 *.tmp.*
+
+# Local working notes, not part of the site
+moavis-blog-plan.md
