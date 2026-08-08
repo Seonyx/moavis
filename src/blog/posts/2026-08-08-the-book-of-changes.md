@@ -29,7 +29,7 @@ Elsewhere, Brian Murray, the chief executive of HarperCollins, was talking about
 
 Philip K. Dick wrote *The Man in the High Castle* by consulting the I Ching, the Book of Changes. Not as background reading, either. He cast the coins when he got stuck and let the hexagrams decide where the story went, said so openly, and then wrote the confession into the novel itself, where Abendsen admits at the climax that the oracle wrote his book. It won the Hugo in 1963. Sixty-three years later a man is accused of consulting a different oracle, denies it, and loses the deal.
 
-However I'm not so sure that's the right way forward. I've been exploring an interesting way to write my biography recently. Typically I'm walking down the street and a childhood memory will come to mind. I make a note of it, then when I'm back home I fire up the AI with the least token deficit and explore the nature of the memory, where it fits into my story, what external events contributed to it, political events at the time perhaps, whether that was the year of the strike or the year before. Then I have rich context for my anecdote.
+However I'm not so sure keeping your receipts is the right way forward. I've been exploring an interesting way to write my biography recently. Typically I'm walking down the street and a childhood memory will come to mind. I make a note of it, then when I'm back home I fire up the AI with the least token deficit and explore the nature of the memory, where it fits into my story, what external events contributed to it, political events at the time perhaps, whether that was the year of the strike or the year before. Then I have rich context for my anecdote.
 
 Has AI written it? No. Should I keep the conversation? Apparently yes.
 
