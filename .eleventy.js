@@ -12,6 +12,23 @@ module.exports = function (eleventyConfig) {
   const md = markdownIt({ html: true, linkify: true, typographer: true })
     .use(markdownItAnchor)
     .use(markdownItFootnote);
+
+  // Open external links in a new tab.
+  const defaultLinkOpen =
+    md.renderer.rules.link_open ||
+    function (tokens, idx, options, env, self) {
+      return self.renderToken(tokens, idx, options);
+    };
+  md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+    const token = tokens[idx];
+    const href = token.attrGet("href");
+    if (href && /^https?:\/\//.test(href)) {
+      token.attrSet("target", "_blank");
+      token.attrSet("rel", "noopener noreferrer");
+    }
+    return defaultLinkOpen(tokens, idx, options, env, self);
+  };
+
   eleventyConfig.setLibrary("md", md);
 
   // --- Passthrough ---
