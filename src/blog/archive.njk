@@ -4,6 +4,9 @@ pagination:
   size: 1
   alias: archiveGroup
 permalink: "/blog/archive/{{ archiveGroup.year }}/{{ archiveGroup.month }}/"
+eleventyComputed:
+  title: "Posts from {{ archiveGroup.posts[0].date | monthName }} {{ archiveGroup.year }}"
+  description: "Posts by Maureen Avis from {{ archiveGroup.posts[0].date | monthName }} {{ archiveGroup.year }}."
 ---
 {% extends "layouts/base.njk" %}
 
@@ -12,12 +15,10 @@ permalink: "/blog/archive/{{ archiveGroup.year }}/{{ archiveGroup.month }}/"
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 {% endblock %}
 
-{% set archiveTitle = "Posts from " + (archiveGroup.posts[0].date | monthName) + " " + archiveGroup.year %}
-
 {% block content %}
 <div class="blog-container">
     <main class="blog-main" data-pagefind-body>
-        <h2 class="archive-heading">{{ archiveTitle }}</h2>
+        <h2 class="archive-heading">{{ title }}</h2>
 
         {% for post in archiveGroup.posts %}
             {% set post = post %}

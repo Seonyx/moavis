@@ -4,6 +4,9 @@ pagination:
   size: 1
   alias: catSlug
 permalink: "/blog/category/{{ catSlug }}/"
+eleventyComputed:
+  title: "{{ catSlug | categoryDisplayName | safe }}"
+  description: "Posts by Maureen Avis on {{ catSlug | categoryDisplayName | safe }}."
 ---
 {% extends "layouts/base.njk" %}
 
@@ -18,7 +21,7 @@ permalink: "/blog/category/{{ catSlug }}/"
 
 <div class="blog-container">
     <main class="blog-main" data-pagefind-body>
-        <h2 class="category-heading">Category: {{ catSlug | categoryDisplayName }}</h2>
+        <h2 class="category-heading">Category: {{ title }}</h2>
 
         {% for post in categoryPosts %}
             {% set post = post %}
