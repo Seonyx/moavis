@@ -96,6 +96,17 @@ module.exports = function (eleventyConfig) {
       .join(" ");
   });
 
+  // --- topicTag filter ---
+  // Renders a category label as a single hashtag-style topic tag. Threads
+  // disallows spaces, ampersands and periods in its intent `tag` parameter and
+  // caps it at 50 characters, so strip to alphanumerics and keep the label's
+  // own capitalisation ("AI & Craft" -> "AICraft").
+  eleventyConfig.addFilter("topicTag", (str) =>
+    String(str || "")
+      .replace(/[^A-Za-z0-9]+/g, "")
+      .slice(0, 50)
+  );
+
   // --- xmlEscape filter (RSS plugin v2 no longer registers it globally) ---
   eleventyConfig.addFilter("xmlEscape", (str) =>
     (str || "")

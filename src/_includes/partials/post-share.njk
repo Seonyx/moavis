@@ -7,6 +7,7 @@
 {%- set encUrl = shareUrl | urlencode -%}
 {%- set encTitle = title | urlencode -%}
 {%- set encTitleUrl = (title ~ " " ~ shareUrl) | urlencode -%}
+{%- set threadsTag = categories[0] | categoryDisplayName | topicTag if categories and categories.length else "" -%}
 
 <div class="post-share"
      data-pagefind-ignore
@@ -34,7 +35,7 @@
            aria-label="Share this post on Bluesky">Bluesky</a>
 
         <a class="share-btn"
-           href="https://www.threads.com/intent/post?text={{ encTitle }}&amp;url={{ encUrl }}"
+           href="https://www.threads.com/intent/post?text={{ encTitle }}&amp;url={{ encUrl }}{% if threadsTag %}&amp;tag={{ threadsTag | urlencode }}{% endif %}"
            target="_blank" rel="noopener noreferrer"
            aria-label="Share this post on Threads">Threads</a>
 
