@@ -10,7 +10,7 @@ eleventyComputed:
 {% extends "layouts/base.njk" %}
 
 {% block head %}
-<link rel="stylesheet" href="/assets/css/blog.css">
+<link rel="stylesheet" href="{{ '/assets/css/blog.css' | assetUrl }}">
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 {% endblock %}
 

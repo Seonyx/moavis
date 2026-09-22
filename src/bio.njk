@@ -6,7 +6,7 @@ eleventyExcludeFromCollections: true
 {% extends "layouts/base.njk" %}
 
 {% block head %}
-<link rel="stylesheet" href="/assets/css/bio.css">
+<link rel="stylesheet" href="{{ '/assets/css/bio.css' | assetUrl }}">
 {% include "partials/jsonld-home.njk" %}
 {% endblock %}
 

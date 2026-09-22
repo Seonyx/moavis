@@ -3,6 +3,9 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 const { DateTime } = require("luxon");
+const crypto = require("crypto");
+const fs = require("fs");
+const path = require("path");
 
 module.exports = function (eleventyConfig) {
   // --- Plugins ---
@@ -106,6 +109,26 @@ module.exports = function (eleventyConfig) {
       .replace(/[^A-Za-z0-9]+/g, "")
       .slice(0, 50)
   );
+
+  // --- assetUrl filter ---
+  // Appends a short content hash to a local asset URL so a changed file gets a
+  // new URL. Cloudflare serves /assets with max-age=14400 while HTML revalidates
+  // on every request, so without this a returning reader can be handed new HTML
+  // alongside a stylesheet up to four hours stale. Deliberately uncached and
+  // throwing: reading a handful of small files per build is cheap, and a typo
+  // should fail the build rather than quietly ship an unhashed URL.
+  eleventyConfig.addFilter("assetUrl", (url) => {
+    const rel = String(url || "").replace(/^\//, "");
+    const file = path.join(__dirname, "src", rel);
+    let contents;
+    try {
+      contents = fs.readFileSync(file);
+    } catch (err) {
+      throw new Error(`assetUrl: cannot read ${file} for "${url}"`);
+    }
+    const hash = crypto.createHash("sha1").update(contents).digest("hex").slice(0, 8);
+    return `${url}?v=${hash}`;
+  });
 
   // --- xmlEscape filter (RSS plugin v2 no longer registers it globally) ---
   eleventyConfig.addFilter("xmlEscape", (str) =>

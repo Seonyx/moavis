@@ -3,7 +3,7 @@
 {% block ogtype %}article{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="/assets/css/blog.css">
+<link rel="stylesheet" href="{{ '/assets/css/blog.css' | assetUrl }}">
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 {% include "partials/meta-post.njk" %}
 {% include "partials/jsonld-post.njk" %}
