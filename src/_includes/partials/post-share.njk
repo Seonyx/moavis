@@ -1,0 +1,50 @@
+{#
+  Share row. Plain intent links, no third-party scripts, no tracking pixels.
+  The native share button and the copy button stay hidden until share.js
+  confirms the browser supports them, so neither can render as a dead control.
+#}
+{%- set shareUrl = site.url ~ page.url -%}
+{%- set encUrl = shareUrl | urlencode -%}
+{%- set encTitle = title | urlencode -%}
+{%- set encTitleUrl = (title ~ " " ~ shareUrl) | urlencode -%}
+
+<div class="post-share"
+     data-pagefind-ignore
+     data-share-url="{{ shareUrl }}"
+     data-share-title="{{ title }}">
+
+    <h2 class="post-share-heading">Share this post</h2>
+
+    <div class="post-share-row">
+        <button type="button" class="share-btn share-native" hidden>Share</button>
+
+        <a class="share-btn"
+           href="https://www.facebook.com/sharer/sharer.php?u={{ encUrl }}"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Share this post on Facebook">Facebook</a>
+
+        <a class="share-btn"
+           href="https://x.com/intent/tweet?url={{ encUrl }}&amp;text={{ encTitle }}"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Share this post on X">X</a>
+
+        <a class="share-btn"
+           href="https://bsky.app/intent/compose?text={{ encTitleUrl }}"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Share this post on Bluesky">Bluesky</a>
+
+        <a class="share-btn"
+           href="https://www.threads.com/intent/post?text={{ encTitle }}&amp;url={{ encUrl }}"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Share this post on Threads">Threads</a>
+
+        <a class="share-btn"
+           href="https://s2f.kytta.dev/?text={{ encTitleUrl }}"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Share this post on Mastodon or another Fediverse server">Mastodon</a>
+
+        <button type="button" class="share-btn share-copy" hidden>Copy link</button>
+    </div>
+</div>
+
+<script src="/assets/js/share.js" defer></script>

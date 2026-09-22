@@ -343,3 +343,67 @@
         font-size: 1.8rem;
     }
 }
+
+/* --- Share row --- */
+.post-share {
+    margin-top: 60px;
+    padding-top: 32px;
+    border-top: 1px solid var(--accent-color);
+}
+
+.post-share-heading {
+    font-family: var(--typewriter-font);
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    margin: 0 0 16px;
+}
+
+.post-share-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.share-btn {
+    font-family: var(--typewriter-font);
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 1px solid #3a3a3a;
+    border-radius: 0;
+    background: rgba(255,255,255,0.02);
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.share-btn:hover,
+.share-btn:focus-visible {
+    border-color: var(--glow-color);
+    color: var(--glow-color);
+    background: rgba(241,196,15,0.05);
+    outline: none;
+}
+
+.share-btn.is-copied {
+    border-color: var(--glow-color);
+    color: var(--glow-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .share-btn {
+        transition: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .share-btn {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}

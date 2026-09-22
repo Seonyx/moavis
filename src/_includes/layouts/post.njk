@@ -35,6 +35,8 @@
             </div>
         </article>
 
+        {% include "partials/post-share.njk" %}
+
         <nav class="post-nav" aria-label="Post navigation">
             {% if previousPost %}
             <a href="{{ previousPost.url }}" rel="prev">
