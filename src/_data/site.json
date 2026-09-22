@@ -1,10 +1,15 @@
 {
   "name": "Maureen Avis",
   "url": "https://moavis.nexus",
-  "description": "Official author site for Maureen Avis — dystopian and speculative fiction.",
-  "author": {
-    "name": "Maureen Avis",
-    "email": ""
+  "description": "Official author site for Maureen Avis: dystopian and speculative fiction.",
+  "author": { "name": "Maureen Avis", "email": "" },
+  "locale": "en_GB",
+  "social": {
+    "x": "@MoAvisMedia",
+    "mastodon": "@moavis@mastodon.social",
+    "mastodonUrl": "https://mastodon.social/@moavis",
+    "bluesky": "moavis.bsky.social",
+    "threads": "https://www.threads.com/@maureenavisauthor"
   },
   "substackUrl": "https://maureenavis.substack.com",
   "defaultOgImage": "/assets/images/og-default.jpg",

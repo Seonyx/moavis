@@ -5,6 +5,7 @@
 {% block head %}
 <link rel="stylesheet" href="/assets/css/blog.css">
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+{% include "partials/meta-post.njk" %}
 {% include "partials/jsonld-post.njk" %}
 {% endblock %}
 
@@ -17,7 +18,7 @@
                 <div class="post-meta">
                     <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
                     {% if categories and categories.length %}
-                     &mdash;
+                     &middot;
                     {% for cat in categories %}
                         <a href="/blog/category/{{ cat }}/">{{ cat | categoryDisplayName }}</a>{% if not loop.last %}, {% endif %}
                     {% endfor %}

@@ -5,7 +5,7 @@
     <div class="post-card-meta">
         <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
         {% if post.data.categories and post.data.categories.length %}
-         &mdash;
+         &middot;
         {% for cat in post.data.categories %}
             <a href="/blog/category/{{ cat }}/">{{ cat | categoryDisplayName }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}

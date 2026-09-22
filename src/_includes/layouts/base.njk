@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga }}"></script>
     <script>
@@ -10,29 +13,40 @@
       gtag('config', '{{ site.ga }}');
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%- set metaTitle = title or site.name -%}
+    {%- set metaDescription = description or excerpt or site.description -%}
+    {%- set metaImage = site.url ~ (ogImage or image or site.defaultOgImage) -%}
+    {%- set metaImageAlt = imageAlt or title or site.name -%}
+    {%- set metaUrl = site.url ~ page.url -%}
 
-    <title>{% if title %}{{ title }} — {{ site.name }}{% else %}{{ site.name }} | Official Author Site{% endif %}</title>
-    <meta name="description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
+    <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} | Official Author Site{% endif %}</title>
+    <meta name="description" content="{{ metaDescription }}">
+    <meta name="author" content="{{ site.author.name }}">
     {% if keywords %}<meta name="keywords" content="{% if keywords is string %}{{ keywords }}{% else %}{{ keywords | join(', ') }}{% endif %}">{% endif %}
 
     <!-- Canonical -->
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="canonical" href="{{ metaUrl }}">
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="{{ site.name }}">
-    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
-    <meta property="og:description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="og:title" content="{{ metaTitle }}">
+    <meta property="og:description" content="{{ metaDescription }}">
+    <meta property="og:url" content="{{ metaUrl }}">
     <meta property="og:type" content="{% block ogtype %}website{% endblock %}">
-    <meta property="og:image" content="{{ site.url }}{% if ogImage %}{{ ogImage }}{% elif image %}{{ image }}{% else %}{{ site.defaultOgImage }}{% endif %}">
+    <meta property="og:image" content="{{ metaImage }}">
+    <meta property="og:image:alt" content="{{ metaImageAlt }}">
 
-    <!-- Twitter Card -->
+    <!-- X card (X falls back to the og: tags for title, description and image) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
-    <meta name="twitter:description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:image" content="{{ site.url }}{% if ogImage %}{{ ogImage }}{% elif image %}{{ image }}{% else %}{{ site.defaultOgImage }}{% endif %}">
+    {% if site.social.x %}
+    <meta name="twitter:site" content="{{ site.social.x }}">
+    <meta name="twitter:creator" content="{{ site.social.x }}">
+    {% endif %}
+
+    <!-- Fediverse: author byline on Mastodon link cards, and profile link verification -->
+    {% if site.social.mastodon %}<meta name="fediverse:creator" content="{{ site.social.mastodon }}">{% endif %}
+    {% if site.social.mastodonUrl %}<link rel="me" href="{{ site.social.mastodonUrl }}">{% endif %}
 
     <!-- RSS autodiscovery -->
     <link rel="alternate" type="application/atom+xml" title="{{ site.name }} Blog" href="{{ site.url }}{{ site.feedUrl }}">

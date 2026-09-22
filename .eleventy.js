@@ -46,9 +46,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("htmlDateString", (date) =>
     DateTime.fromJSDate(date, { zone: "utc" }).toFormat("yyyy-LL-dd")
   );
-  eleventyConfig.addFilter("isoDate", (date) =>
-    DateTime.fromJSDate(date, { zone: "utc" }).toISO()
-  );
+  // Accepts a JS Date (what YAML gives for an unquoted date) or an ISO string
+  // (what a quoted front-matter value gives). Throws on anything unparseable so
+  // a typo fails the build instead of silently emitting null metadata.
+  eleventyConfig.addFilter("isoDate", (date) => {
+    const dt =
+      date instanceof Date
+        ? DateTime.fromJSDate(date, { zone: "utc" })
+        : typeof date === "string"
+          ? DateTime.fromISO(date, { zone: "utc" })
+          : DateTime.invalid("unsupported value");
+    if (!dt.isValid) {
+      throw new Error(`isoDate: cannot parse date value ${JSON.stringify(date)}`);
+    }
+    return dt.toISO();
+  });
   eleventyConfig.addFilter("yearMonth", (date) =>
     DateTime.fromJSDate(date, { zone: "utc" }).toFormat("yyyy/LL")
   );
