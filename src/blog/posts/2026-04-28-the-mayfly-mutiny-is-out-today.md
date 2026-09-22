@@ -24,7 +24,7 @@ The colony is under-resourced, over-managed, and permanently one mistake away fr
 
 If you've ever looked at a system and thought, *this doesn't just happen, someone has to keep choosing it*, you're already close to the book's heartbeat.
 
-The story follows people living inside that arithmetic — people who have been told their limits are natural, virtuous, even holy. People who are expected to be grateful for a destiny that was decided before their first breath. People who begin, slowly at first, to ask the wrong questions.
+The story follows people living inside that arithmetic: people who have been told their limits are natural, virtuous, even holy. People who are expected to be grateful for a destiny that was decided before their first breath. People who begin, slowly at first, to ask the wrong questions.
 
 And on Mars, where every breath is accounted for, "wrong questions" can be more dangerous than theft.
 
@@ -45,7 +45,7 @@ But the real engine is something quieter: the tension between what people are to
 
 ## Why "Mayfly"?
 
-A mayfly lives briefly — sometimes for hours — long enough to rise, mate, and vanish. Its whole adult life is a flash. It's beautiful, and it's cruel.
+A mayfly lives briefly - sometimes for hours - long enough to rise, mate, and vanish. Its whole adult life is a flash. It's beautiful, and it's cruel.
 
 In the colony, "mayfly" becomes a metaphor, then a label, then a weapon. It becomes a way of speaking about people whose time has been predetermined, and about what happens when those people stop treating their short lives as a reason to obey.
 
@@ -89,7 +89,7 @@ The Kindle edition is priced at about the cost of a coffee, and the paperback is
 
 This is the first book in a series. Two more are already well underway.
 
-That doesn't mean the story is "Part One of Ten Chapters". It stands on its own. But if you finish it and feel that particular itch — the one that says *I want to know what happens to these people and this world next* — then good. That itch has a future.
+That doesn't mean the story is "Part One of Ten Chapters". It stands on its own. But if you finish it and feel that particular itch, the one that says *I want to know what happens to these people and this world next*, then good. That itch has a future.
 
 For now, thank you for being here at the start.
 

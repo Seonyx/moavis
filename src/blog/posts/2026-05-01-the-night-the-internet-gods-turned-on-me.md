@@ -30,7 +30,7 @@ At some point I'd been bothered by two more gods. Phobos had tapped me on the sh
 
 But oh no, the gods weren't finished with me yet. Tyche, the goddess of fortune, chance, and destiny, had to show up and throw a spanner in the works. Another drop-down opened in the browser's Bitwarden extension, inviting me to overwrite the passkey.
 
-What do I do? What if overwriting the passkey creates the same turmoil back in the office that I've just spent ten minutes enduring here? That's what really pushed me over the edge, wondering when it became so unreasonably complicated to click on a follow button. When did we decide it was acceptable for these ever-accumulating slivers of our time to be frittered away on cybersecurity? And *cui bono* — who benefits from all this? Follow the money, I'd say: the same people who make us click on the image with a crosswalk to prove we're not a robot.
+What do I do? What if overwriting the passkey creates the same turmoil back in the office that I've just spent ten minutes enduring here? That's what really pushed me over the edge, wondering when it became so unreasonably complicated to click on a follow button. When did we decide it was acceptable for these ever-accumulating slivers of our time to be frittered away on cybersecurity? And *cui bono*, who benefits from all this? Follow the money, I'd say: the same people who make us click on the image with a crosswalk to prove we're not a robot.
 
 Anyway, I declined to save the "new passkey", clicked the button to follow Bruce, nearly forgetting why I'd embarked on this pantomime in the first place, and sat down to write this blog.
 
