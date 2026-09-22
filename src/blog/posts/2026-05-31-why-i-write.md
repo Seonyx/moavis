@@ -22,7 +22,7 @@ This is, I think, what Orwell meant when he talked about pushing the world in a 
 
 > "The modern conservative is engaged in one of man's oldest exercises in moral philosophy; that is, the search for a superior moral justification for selfishness."
 >
-> ― John Kenneth Galbraith
+> John Kenneth Galbraith
 
 Since the adoption of Chicago School economics by Reagan and Thatcher, the voice for selfishness has shouted louder than all others, and that seems to be behind many of the worsening problems we see in front of us. It seems to me that the scariest part of increasing wealth and income inequality is that every day the poor get poorer, they also become increasingly disenfranchised. Few of us have been in the position of experiencing real poverty. If we are short at the end of the month, we put the weekly shop on the credit card and move on. This is not how it is for absolute poverty. What poverty does is remove your choices, one by one, until your options become: break the law or die. As we accelerate towards a surveillance society where cash is banned and Big Brother knows your every move, the former of those two options will also, for all practical purposes, be removed. This is the territory my fiction keeps returning to, not as dystopian wallpaper, but as a genuine attempt to map where these pressures lead and what it might cost us to resist them.
 
