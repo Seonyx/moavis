@@ -49,11 +49,14 @@ User asks to add, write, or publish a new blog post.
    ```
    The build command is `npm run build:eleventy && npm run build:pagefind`.
 
-5. **Show the user** the file diff and the local URL (`/blog/posts/YYYY-MM-DD-slug/`).
+5. **Do not wait for approval.** The user reviews posts live on several
+   platforms after publishing, so go straight on to commit and push.
 
-6. **Wait for explicit go-ahead** before committing.
+6. **Report afterwards**: the file, the live URL
+   (`https://moavis.nexus/blog/posts/YYYY-MM-DD-slug/`), and any liberties
+   taken with the supplied text (added links, reformatting).
 
-7. **Commit and push** on approval. Include the hero image in the same
+7. **Commit and push**. Include the hero image in the same
    commit (it is a new untracked file, so committing only the Markdown would
    leave the image 404ing on the live site):
    ```
