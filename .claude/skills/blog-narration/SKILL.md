@@ -11,77 +11,66 @@ Attach a pre-made narration MP3 to one existing blog post on moavis.nexus. One p
 
 Steve supplies two things:
 
-1. **Page**: the blog post to update (a file name, title or slug; resolve it to one file).
+1. **Page**: the blog post to update (a file name, title or slug; resolve it to one file in `src/blog/posts/`).
 2. **MP3**: the narration file name. It will already be in `src/assets/audio/`, or Steve will say where it is.
 
 If either is missing or matches more than one file, ask. Do not guess.
 
+## How narration works on this site
+
+The plumbing already exists. A run only adds the MP3 and a front-matter entry to the post. Do not edit these files unless something is broken:
+
+- `src/_includes/partials/narration.njk` renders the player: a `<figure class="narration">` with a caption, `<audio controls preload="metadata">` and a download link as fallback. No autoplay.
+- `src/_includes/layouts/post.njk` includes the partial between the post header (title, date, categories) and the hero image/body, whenever the post has a `narration` front-matter entry. It sets the player URL via the `assetUrl` filter, so the src carries a `?v=<hash>` and a re-recorded MP3 is not held back by Cloudflare's 4-hour asset cache. It shows the duration as rounded minutes, with a minimum of 1 min.
+- `src/_includes/partials/jsonld-post.njk` adds an `AudioObject` (`contentUrl` as the plain absolute URL without the hash, `encodingFormat: "audio/mpeg"`, ISO 8601 `duration`) to the post's `BlogPosting` JSON-LD.
+- `src/assets/css/blog.css` styles `.narration` (quiet grey caption, full-width dark player).
+- `src/assets` is passthrough-copied by `.eleventy.js`, so `src/assets/audio/<file>.mp3` is served at `/assets/audio/<file>.mp3`.
+
 ## Step 0: Pre-flight
 
-- Run `git status`. If there are uncommitted changes unrelated to this task, stop and report them.
-- Check for `.git/index.lock` and editor lock or swap files on the target page. If any exist, stop and report them.
-- Confirm the MP3 exists and is non-trivial in size. If `ffprobe` is available, read the duration.
+- Run `git status`. The new MP3 showing as untracked is expected. If there are other uncommitted changes, stop and report them.
+- Check for `.git/index.lock` and editor lock or swap files on the target post. If any exist, stop and report them.
+- Confirm the MP3 exists and is non-trivial in size. Read its duration in seconds with `ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 <file>`, and round to whole seconds.
 
-## Step 1: Find out how audio reaches the live site (first run, then reuse)
+## Step 1: Get the slug
 
-Before writing anything, establish how files under `src/assets/` end up on the deployed site. Identify the site generator and its config. Then check one thing: is `src/assets/` copied verbatim to the build output, or only processed when imported (as in Astro or Vite)?
+Use, in order of preference: an explicit `slug` field in the front matter, then a `permalink`, then the file name with its `YYYY-MM-DD-` prefix removed (Eleventy's `page.fileSlug`). Report which source you used.
 
-- If it is served verbatim, a plain path such as `/assets/audio/<file>.mp3` works. Confirm the exact public path from the build config or an existing asset reference.
-- If it is processed only on import, the page must import the file to get its URL. In Astro that is `import narration from '../assets/audio/<file>.mp3?url'` or the project's equivalent.
-- If neither fits cleanly, stop and explain the options to Steve before changing anything.
+If the MP3 is not already named `<slug>.mp3`, rename it so it follows that convention (`git mv` if tracked, otherwise a plain move), and say that you did.
 
-Do not assume. Verify it with a local build, or by checking that an existing asset's reference resolves in the build output.
+## Step 2: Update the post
 
-## Step 2: Get the slug from the page
+Add a `narration` entry to the post's front matter, after the existing fields:
 
-Read the slug from the page's existing furniture, in this order of preference: an explicit `slug` field in the frontmatter, then the permalink or route definition, then the file name. Report which source you used.
-
-If the MP3 is not already named `<slug>.mp3`, rename it with `git mv` (or a plain `mv` if it is untracked) so it follows that convention, and say that you did.
-
-## Step 3: Narration component
-
-Look for an existing narration component or include, such as `Narration.astro`, a partial, or a shortcode.
-
-- If one exists, use it.
-- If none exists, create one in the project's conventional components location. It must render exactly this markup:
-
-```html
-<figure class="narration">
-  <figcaption>Listen to this post (narrated, {N} min)</figcaption>
-  <audio controls preload="metadata" src="{URL}">
-    <a href="{URL}">Download the narration (MP3)</a>
-  </audio>
-</figure>
+```yaml
+narration:
+  src: "/assets/audio/<slug>.mp3"
+  seconds: <duration in whole seconds>
 ```
 
-Component rules:
+- **Idempotency:** if the post already has a `narration` entry, replace it rather than adding a second one.
+- Omit `seconds` only if the duration could not be read; the caption and JSON-LD then leave the duration out.
+- Change nothing else in the post.
 
-- Its props are the audio URL and the duration in minutes (rounded). Omit the "{N} min" part if no duration is passed.
-- Never use autoplay.
-- Add minimal styling that matches the site's existing typography and colour tokens. The block should be visually quiet.
-- Tell Steve a new component was created, and where, because later runs will reuse it.
+## Step 3: Verify
 
-## Step 4: Update the page
+Run `npm run build`, then check the built page at `_site/blog/posts/<file name without .md>/index.html`:
 
-- Insert the component directly after the title/byline block and before the body text. If a post has a distinctive layout, find the equivalent position and say what you chose.
-- **Idempotency:** if the page already has a narration block, replace it rather than adding a second one.
-- If the page or layout already emits JSON-LD, add an `AudioObject` with `contentUrl`, `encodingFormat: "audio/mpeg"` and, if known, `duration` in ISO 8601 format (e.g. `PT9M12S`). If there is no JSON-LD, skip this step and do not introduce it.
-- Change nothing else on the page.
+- exactly one `<figure class="narration">`, with the expected caption and minutes,
+- the audio `src` points at `/assets/audio/<slug>.mp3?v=...`, and `_site/assets/audio/<slug>.mp3` exists,
+- the JSON-LD block parses as valid JSON and contains the `AudioObject`.
 
-## Step 5: Verify
+If feasible, open the page and confirm the player shows its duration.
 
-- Run the local build or dev server and confirm the page renders. Check that the audio URL in the built output points at a file that exists in the output.
-- If feasible, open the page and confirm the player shows its duration.
+## Step 4: Commit, push and report
 
-## Step 6: Commit, push and report
+If Step 3 passed, commit the MP3 and the post (and nothing else) and push to `master` without waiting for approval. Use the commit message `Add narration: <post title>`. The push deploys to Cloudflare Pages, and Steve reviews the change live.
 
-If Step 5 passed, commit and push to `master` without waiting for approval. Use the commit message `Add narration: <post title>`. The push deploys to Cloudflare Pages, and Steve reviews the change live.
-
-If Step 5 failed, do not commit. Stop and report the failure.
+If Step 3 failed, do not commit. Stop and report the failure.
 
 After pushing, tell Steve:
 
 - the commit hash,
-- the final audio URL,
+- the final audio URL and the page URL,
 - the slug and its source,
-- any rename, new component or anything unexpected.
+- any rename or anything unexpected.
