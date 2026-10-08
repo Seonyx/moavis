@@ -6,6 +6,9 @@ categories:
 excerpt: "A new world was promised. The terms were not. The Mayfly Mutiny is out now on Amazon in Kindle and paperback."
 image: "/assets/images/posts/d08bb663-720b-46b2-922f-5d12f909f3a4_450x720.webp"
 draft: false
+narration:
+  src: "/assets/audio/the-mayfly-mutiny-is-out-today.mp3"
+  seconds: 279
 ---
 
 *A new world was promised. The terms were not.*
