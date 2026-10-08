@@ -127,6 +127,22 @@
     color: #ccc;
 }
 
+/* Narration player */
+.narration {
+    margin: -16px 0 40px;
+}
+
+.narration figcaption {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.narration audio {
+    width: 100%;
+    color-scheme: dark;
+}
+
 .post-body h2,
 .post-body h3,
 .post-body h4 {

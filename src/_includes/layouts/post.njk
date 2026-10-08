@@ -26,6 +26,13 @@
                 </div>
             </header>
 
+            {% if narration %}
+            {% set narrationUrl = narration.src | assetUrl %}
+            {% set narrationMinutes = null %}
+            {% if narration.seconds %}{% set narrationMinutes = (narration.seconds / 60) | round or 1 %}{% endif %}
+            {% include "partials/narration.njk" %}
+            {% endif %}
+
             {% if image %}
             <img src="{{ image }}" alt="{{ title }}" style="width:100%;height:auto;margin-bottom:32px;border:1px solid var(--accent-color);">
             {% endif %}

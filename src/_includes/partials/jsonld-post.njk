@@ -10,5 +10,11 @@
   "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" }
   {% if image %}, "image": "{{ site.url }}{{ image }}"{% endif %}
+  {% if narration %}, "audio": {
+    "@type": "AudioObject",
+    "contentUrl": "{{ site.url }}{{ narration.src }}",
+    "encodingFormat": "audio/mpeg"
+    {% if narration.seconds %}, "duration": "PT{{ (narration.seconds / 60) | int }}M{{ narration.seconds % 60 }}S"{% endif %}
+  }{% endif %}
 }
 </script>

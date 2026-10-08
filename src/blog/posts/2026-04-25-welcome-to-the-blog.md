@@ -4,6 +4,9 @@ date: 2026-04-25
 categories: ["news-and-updates"]
 excerpt: "The blog is now open. A place to think on the page about writing, publishing, and everything between the ideas."
 draft: false
+narration:
+  src: "/assets/audio/welcome-to-the-blog.mp3"
+  seconds: 37
 ---
 
 This is the first post on the Maureen Avis blog.

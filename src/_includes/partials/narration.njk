@@ -1,0 +1,7 @@
+{#- Narration player. Expects narrationUrl and, optionally, narrationMinutes. -#}
+<figure class="narration">
+  <figcaption>Listen to this post (narrated{% if narrationMinutes %}, {{ narrationMinutes }} min{% endif %})</figcaption>
+  <audio controls preload="metadata" src="{{ narrationUrl }}">
+    <a href="{{ narrationUrl }}">Download the narration (MP3)</a>
+  </audio>
+</figure>
