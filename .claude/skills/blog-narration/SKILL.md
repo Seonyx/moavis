@@ -20,7 +20,7 @@ If either is missing or matches more than one file, ask. Do not guess.
 
 The plumbing already exists. A run only adds the MP3 and a front-matter entry to the post. Do not edit these files unless something is broken:
 
-- `src/_includes/partials/narration.njk` renders the player: a `<figure class="narration">` with a caption, `<audio controls preload="metadata">` and a download link as fallback. No autoplay.
+- `src/_includes/partials/narration.njk` renders the player: a `<figure class="narration">` with the caption "Listen to this post (AI-narrated, N min)", `<audio controls preload="metadata">` and a download link as fallback. No autoplay. The caption has `id="narration-label"` and the `<audio>` has `aria-labelledby="narration-label"`, so screen readers announce the caption rather than just "audio". The fixed id is safe because there is only one player per page.
 - `src/_includes/layouts/post.njk` includes the partial between the post header (title, date, categories) and the hero image/body, whenever the post has a `narration` front-matter entry. It sets the player URL via the `assetUrl` filter, so the src carries a `?v=<hash>` and a re-recorded MP3 is not held back by Cloudflare's 4-hour asset cache. It shows the duration as rounded minutes, with a minimum of 1 min.
 - `src/_includes/partials/jsonld-post.njk` adds an `AudioObject` (`contentUrl` as the plain absolute URL without the hash, `encodingFormat: "audio/mpeg"`, ISO 8601 `duration`) to the post's `BlogPosting` JSON-LD.
 - `src/assets/css/blog.css` styles `.narration` (quiet grey caption, full-width dark player).
@@ -56,7 +56,8 @@ narration:
 
 Run `npm run build`, then check the built page at `_site/blog/posts/<file name without .md>/index.html`:
 
-- exactly one `<figure class="narration">`, with the expected caption and minutes,
+- exactly one `<figure class="narration">`, with the caption "Listen to this post (AI-narrated, N min)" and the expected minutes,
+- the `<audio>` carries `aria-labelledby="narration-label"`, matching the caption's id,
 - the audio `src` points at `/assets/audio/<slug>.mp3?v=...`, and `_site/assets/audio/<slug>.mp3` exists,
 - the JSON-LD block parses as valid JSON and contains the `AudioObject`.
 

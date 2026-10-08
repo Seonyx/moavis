@@ -1,7 +1,7 @@
-{#- Narration player. Expects narrationUrl and, optionally, narrationMinutes. -#}
+{#- Narration player. Expects narrationUrl and, optionally, narrationMinutes. One per page, so the label id is fixed. -#}
 <figure class="narration">
-  <figcaption>Listen to this post (narrated{% if narrationMinutes %}, {{ narrationMinutes }} min{% endif %})</figcaption>
-  <audio controls preload="metadata" src="{{ narrationUrl }}">
+  <figcaption id="narration-label">Listen to this post (AI-narrated{% if narrationMinutes %}, {{ narrationMinutes }} min{% endif %})</figcaption>
+  <audio controls preload="metadata" src="{{ narrationUrl }}" aria-labelledby="narration-label">
     <a href="{{ narrationUrl }}">Download the narration (MP3)</a>
   </audio>
 </figure>
