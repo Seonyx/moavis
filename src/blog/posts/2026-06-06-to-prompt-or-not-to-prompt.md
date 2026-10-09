@@ -6,6 +6,9 @@ categories:
 excerpt: "On Katri Manninen, the ALLi AI policy, verbal fingerprints, and why the real question was never 'did you use AI?' but 'did you have anything to say?'"
 image: "/assets/images/posts/WillShakes.jpg"
 draft: false
+narration:
+  src: "/assets/audio/to-prompt-or-not-to-prompt.mp3"
+  seconds: 511
 ---
 
 *Whether 'tis nobler to suffer the blank page...*
