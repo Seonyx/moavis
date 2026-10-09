@@ -6,6 +6,9 @@ categories:
 excerpt: "Every author needs an answer to why they write. Mine involves Orwell, Le Guin, Jurassic Park, and the disappearing freedoms we can't afford to lose."
 image: "/assets/images/posts/AlienWithRaygun.jpg"
 draft: false
+narration:
+  src: "/assets/audio/why-i-write.mp3"
+  seconds: 334
 ---
 
 The question of why one writes is something every author should have a prepared answer to. People are inevitably going to ask, so it is best to know the answer in advance. Also, in the manner of a business plan, it is essential to know the goal of any activity to which one is devoting considerable time and resources. Here, then, I intend to address this question.
