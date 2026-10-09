@@ -6,6 +6,9 @@ categories:
 excerpt: "When a nine-year-old can't explain evaporation but her homework is immaculate, you have the Norway problem in miniature."
 image: "/assets/images/posts/AIban1.jpg"
 draft: false
+narration:
+  src: "/assets/audio/the-right-to-learn-the-hard-way.mp3"
+  seconds: 329
 ---
 
 *Norway is keeping AI out of its youngest classrooms, and it may be onto something.*
