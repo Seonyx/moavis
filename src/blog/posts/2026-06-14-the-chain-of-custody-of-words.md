@@ -6,6 +6,9 @@ categories:
 excerpt: "What happens to writing after it leaves your hands? On prizes, courts, answer engines, and who gets to name the work."
 image: "/assets/images/posts/aifree.jpg"
 draft: false
+narration:
+  src: "/assets/audio/the-chain-of-custody-of-words.mp3"
+  seconds: 652
 ---
 
 *What happens to writing after it leaves your hands.*
