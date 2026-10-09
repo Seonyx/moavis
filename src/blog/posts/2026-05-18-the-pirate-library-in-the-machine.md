@@ -6,6 +6,9 @@ categories:
 excerpt: "The Baldacci lawsuit points to the real question for AI fiction: not whether machines can write, but what they were fed before they opened their mouths."
 image: "/assets/images/posts/lawsuit18may2026.png"
 draft: false
+narration:
+  src: "/assets/audio/the-pirate-library-in-the-machine.mp3"
+  seconds: 488
 ---
 
 *David Baldacci may not be my cup of thriller, but his lawsuit points to the real question for AI fiction: not whether machines can write, but what they were fed before they opened their mouths.*
@@ -24,7 +27,7 @@ That distinction matters quite a lot to those of us building creative practices 
 
 ## What the Baldacci Case Actually Reveals
 
-Baldacci's suit is now folded into the giant *In re OpenAI, Inc. Copyright Infringement Litigation* MDL in the Southern District of New York. It sits alongside claims from a long list of heavy hitters across fiction and beyond. The core allegations come in three flavours: unauthorised reproduction of copyrighted books, use of those copies for training, and generation of outputs that themselves infringe.
+Baldacci's suit is now folded into the giant *in the matter of OpenAI, Inc. Copyright Infringement Litigation* MDL in the Southern District of New York. It sits alongside claims from a long list of heavy hitters across fiction and beyond. The core allegations come in three flavours: unauthorised reproduction of copyrighted books, use of those copies for training, and generation of outputs that themselves infringe.
 
 Procedurally, the case is still very much alive as of mid-2026. Judge Sidney Stein denied OpenAI's bid to dismiss the output-infringement claims late last year, finding that plaintiffs had plausibly alleged substantial similarity in at least some ChatGPT responses. The bigger fair-use question around training data itself hasn't been fully resolved. Discovery grinds forward, including orders for tens of millions of output logs. There was even a sealed motion to compel documents from Amazon, which gives you some idea how far the evidence hunt has reached into the broader book ecosystem.
 
