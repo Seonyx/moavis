@@ -15,6 +15,9 @@ keywords:
   - "AI scepticism / AI objections"
   - "AI-assisted fiction"
 draft: false
+narration:
+  src: "/assets/audio/ai-quantum-objectors.mp3"
+  seconds: 361
 ---
 
 *Schrödinger's AI: simultaneously too stupid to write an email and clever enough to end the world.*
