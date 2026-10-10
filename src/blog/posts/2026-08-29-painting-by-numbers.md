@@ -15,6 +15,9 @@ keywords:
   - AI writing workflow
 excerpt: "Publishers are asking novelists to prove where every sentence came from. As it turns out, I already have the receipts."
 draft: false
+narration:
+  src: "/assets/audio/painting-by-numbers.mp3"
+  seconds: 505
 ---
 
 *Publishers are asking novelists to prove where every sentence came from. As it turns out, I already have the receipts.*
