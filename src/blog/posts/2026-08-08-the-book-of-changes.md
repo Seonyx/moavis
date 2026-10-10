@@ -17,6 +17,9 @@ keywords:
   - democratising publishing
 excerpt: "Storytelling predates writing by millennia. As HarperCollins warns of AI copyright risk and deals collapse on suspicion, what happens to authorship next."
 draft: false
+narration:
+  src: "/assets/audio/the-book-of-changes.mp3"
+  seconds: 313
 ---
 
 *Storytelling is old, writing is new, and AI panic is newer still.*
