@@ -6,6 +6,9 @@ categories:
 excerpt: "A novelist's case for building your own AI writing system with a frontier model, rather than buying an off-the-shelf tool that forces its habits on you."
 image: "/assets/images/posts/AITools.jpg"
 draft: false
+narration:
+  src: "/assets/audio/avoid-ai-writing-tools-build-your-own-instead.mp3"
+  seconds: 282
 ---
 
 *A novelist's case for building your own AI writing system rather than buying one off the shelf.*
