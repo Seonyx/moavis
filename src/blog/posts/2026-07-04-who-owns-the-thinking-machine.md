@@ -6,6 +6,9 @@ categories:
 excerpt: "What would Marx make of AI? The danger is not a machine that plots against us, but who owns the thinking machine and who profits when thinking gets cheaper."
 image: "/assets/images/posts/BustInDataCentre.jpg"
 draft: false
+narration:
+  src: "/assets/audio/who-owns-the-thinking-machine.mp3"
+  seconds: 697
 ---
 
 *Marx, machine learning, and the struggle over who profits when thinking gets cheaper.*
