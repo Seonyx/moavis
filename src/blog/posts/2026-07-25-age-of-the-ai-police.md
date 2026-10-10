@@ -6,6 +6,9 @@ categories:
 excerpt: "Substack's new AI detector scored everything I fed it at 100%, which says rather more about the year than the writing."
 image: "/assets/images/posts/aiPolice.jpg"
 draft: false
+narration:
+  src: "/assets/audio/age-of-the-ai-police.mp3"
+  seconds: 238
 ---
 
 A post on Instagram caught my eye yesterday from the ever-entertaining Sophia Smith Galer (author of *How To Kill A Language*, available from all good booksellers). She had a rant about the introduction of an AI detection tool on Substack, arguing that the company is blaming AI writers for a flood of low-quality content created by its own demand for relentless, unpaid publishing. In her view, turning users into AI police avoids confronting the platform incentives that made automation attractive in the first place. I concur!
