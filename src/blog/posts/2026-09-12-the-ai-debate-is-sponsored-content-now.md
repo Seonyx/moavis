@@ -13,6 +13,9 @@ keywords:
   - paid AI influencers
 excerpt: "Everyone wants to tell us whether AI is good or bad. The question nobody is paying us to ask is who owns the machinery."
 draft: false
+narration:
+  src: "/assets/audio/the-ai-debate-is-sponsored-content-now.mp3"
+  seconds: 366
 ---
 
 *Everyone wants to tell us whether AI is good or bad. The question nobody is paying us to ask is who owns the machinery*
