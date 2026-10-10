@@ -19,6 +19,9 @@ keywords:
   - future of publishing
 excerpt: "John Henry beat the steam drill and it killed him. The race with AI is coming for writers too, and the folk ballad has the wrong lesson in it."
 draft: false
+narration:
+  src: "/assets/audio/are-we-all-john-henries-now.mp3"
+  seconds: 302
 ---
 
 *The race with the machine is coming. Dropping dead at the end of it is optional*
