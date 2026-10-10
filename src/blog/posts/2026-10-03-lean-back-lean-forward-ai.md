@@ -12,6 +12,9 @@ keywords:
   - Artificial Intelligence
 excerpt: "32 of 35 students handed in AI essays mentioning Madagascar, unread. Why leaning back on AI fails and leaning forward makes it a tutor worth having."
 draft: false
+narration:
+  src: "/assets/audio/lean-back-lean-forward-ai.mp3"
+  seconds: 280
 ---
 
 *A hidden prompt caught a class handing in essays they never read, and showed the real divide in how people use AI.*
