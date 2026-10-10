@@ -15,6 +15,9 @@ keywords:
   - AI and authorship
 excerpt: "Claude's future models will watermark everything they generate. On SynthID, the EU AI Act's Article 50, and what that means for a writer who leans on AI."
 draft: false
+narration:
+  src: "/assets/audio/claudes-watermark-affair.mp3"
+  seconds: 378
 ---
 
 *Notes from the ducking stool*
