@@ -12,6 +12,9 @@ keywords:
   - Mamdani AI schools
 excerpt: "On Chicago's staff-inclusive AI ban, New York's moratorium, and why keeping students away from the tool might be the bigger risk."
 draft: false
+narration:
+  src: "/assets/audio/is-ai-making-us-stupid-or-are-we-just-using-it-badly.mp3"
+  seconds: 343
 ---
 
 *On Chicago's staff-inclusive AI ban, New York's moratorium, and why keeping students away from the tool might be the bigger risk*
