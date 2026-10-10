@@ -13,6 +13,9 @@ keywords:
   - Luddites and AI
 excerpt: "Anti-AI feeling is real, rising, and pointed at the wrong target. What the Weathermen's mistake in the 1970s has to teach today's backlash against AI."
 draft: false
+narration:
+  src: "/assets/audio/the-weathermen-made-a-big-mistake-will-we.mp3"
+  seconds: 342
 ---
 
 *Anti-AI feeling is real, rising and pointed squarely at the wrong target*
