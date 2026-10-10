@@ -6,6 +6,9 @@ categories:
 excerpt: "On Krautrock, Impressionism, and the one thing AI genuinely cannot fake: the specific, private, historically placed human reason to make something new."
 image: "/assets/images/posts/human-in-the-machine.png"
 draft: false
+narration:
+  src: "/assets/audio/the-human-in-the-machine.mp3"
+  seconds: 440
 ---
 
 *The Spark AI Can't Fake.*
