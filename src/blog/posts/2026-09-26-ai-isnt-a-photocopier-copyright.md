@@ -20,6 +20,9 @@ keywords:
   - Gerard Hoffnung
 excerpt: "Is AI just a photocopier for other people's work? What the copyright cases show about when, and why, AI actually reproduces text word for word."
 draft: false
+narration:
+  src: "/assets/audio/ai-isnt-a-photocopier-copyright.mp3"
+  seconds: 384
 ---
 
 *Why verbatim copying by AI is rare, and why humans do it more often than we admit*
