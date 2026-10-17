@@ -1,24 +1,24 @@
 ---
-title: "AI Is a Mountain, So Keep Climbing"
+title: "The AI Mountain: Why the View Gets Better the Higher You Climb"
 date: 2026-10-17
 categories:
-  - ai-and-craft
+  - ai-and-writing
 image: "/assets/images/posts/mountain.jpg"
 imageAlt: "A mountain rising above the clouds."
 keywords:
-  - AI skepticism
-  - AI productivity
-  - custom instructions
+  - Vibe Coding
   - Claude Code
-  - Grant Sanderson
-  - Grothendieck
-  - AI and mathematics
-excerpt: "People who climb a few feet up the AI mountain and judge the view from there miss what the climb offers. Why I kept going, and what mathematicians say."
+  - Mathematics
+  - AI Scepticism
+  - Artificial Intelligence
+excerpt: "Too many AI critics judge the view from a few feet up. A coding accident, a maths video and Grothendieck’s rising sea make the case for climbing on."
 draft: false
 narration:
-  src: "/assets/audio/ai-is-a-mountain-so-keep-climbing.mp3"
+  src: "/assets/audio/the-ai-mountain-why-the-view-gets-better-the-higher-you-climb.mp3"
   seconds: 376
 ---
+
+*Mathematicians are further up the AI mountain than most of us, and what they’re seeing is worth hearing about.*
 
 I found myself responding to a comment on social media this week and in so doing, I came up with an analogy about AI which I thought merits a share on the old blog, so here we go.
 
