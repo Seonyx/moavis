@@ -22,7 +22,7 @@ excerpt: "Is AI just a photocopier for other people's work? What the copyright c
 draft: false
 narration:
   src: "/assets/audio/ai-isnt-a-photocopier-copyright.mp3"
-  seconds: 384
+  seconds: 387
 ---
 
 *Why verbatim copying by AI is rare, and why humans do it more often than we admit*
