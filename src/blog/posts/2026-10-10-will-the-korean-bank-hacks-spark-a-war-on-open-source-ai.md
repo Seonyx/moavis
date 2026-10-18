@@ -19,7 +19,7 @@ excerpt: "AI-assisted hacks on South Korean banks are a gift to regulators. If p
 draft: false
 narration:
   src: "/assets/audio/will-the-korean-bank-hacks-spark-a-war-on-open-source-ai.mp3"
-  seconds: 372
+  seconds: 374
 ---
 
 *First they came for poker, then crypto. AI-assisted attacks on South Korean banks could hand regulators the excuse to come for open source.*
