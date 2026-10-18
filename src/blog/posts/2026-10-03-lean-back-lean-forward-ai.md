@@ -14,7 +14,7 @@ excerpt: "32 of 35 students handed in AI essays mentioning Madagascar, unread. W
 draft: false
 narration:
   src: "/assets/audio/lean-back-lean-forward-ai.mp3"
-  seconds: 280
+  seconds: 283
 ---
 
 *A hidden prompt caught a class handing in essays they never read, and showed the real divide in how people use AI.*
