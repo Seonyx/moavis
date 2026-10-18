@@ -21,7 +21,7 @@ excerpt: "John Henry beat the steam drill and it killed him. The race with AI is
 draft: false
 narration:
   src: "/assets/audio/are-we-all-john-henries-now.mp3"
-  seconds: 302
+  seconds: 305
 ---
 
 *The race with the machine is coming. Dropping dead at the end of it is optional*
