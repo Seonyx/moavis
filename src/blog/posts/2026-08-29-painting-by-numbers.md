@@ -17,7 +17,7 @@ excerpt: "Publishers are asking novelists to prove where every sentence came fro
 draft: false
 narration:
   src: "/assets/audio/painting-by-numbers.mp3"
-  seconds: 505
+  seconds: 508
 ---
 
 *Publishers are asking novelists to prove where every sentence came from. As it turns out, I already have the receipts.*
