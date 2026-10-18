@@ -15,7 +15,7 @@ excerpt: "Anti-AI feeling is real, rising, and pointed at the wrong target. What
 draft: false
 narration:
   src: "/assets/audio/the-weathermen-made-a-big-mistake-will-we.mp3"
-  seconds: 342
+  seconds: 345
 ---
 
 *Anti-AI feeling is real, rising and pointed squarely at the wrong target*
