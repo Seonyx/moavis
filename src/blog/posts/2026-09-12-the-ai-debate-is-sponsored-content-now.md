@@ -15,7 +15,7 @@ excerpt: "Everyone wants to tell us whether AI is good or bad. The question nobo
 draft: false
 narration:
   src: "/assets/audio/the-ai-debate-is-sponsored-content-now.mp3"
-  seconds: 366
+  seconds: 369
 ---
 
 *Everyone wants to tell us whether AI is good or bad. The question nobody is paying us to ask is who owns the machinery*
