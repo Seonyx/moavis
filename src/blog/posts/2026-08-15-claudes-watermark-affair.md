@@ -17,7 +17,7 @@ excerpt: "Claude's future models will watermark everything they generate. On Syn
 draft: false
 narration:
   src: "/assets/audio/claudes-watermark-affair.mp3"
-  seconds: 378
+  seconds: 380
 ---
 
 *Notes from the ducking stool*
