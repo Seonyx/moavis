@@ -6,7 +6,7 @@ excerpt: "The blog is now open. A place to think on the page about writing, publ
 draft: false
 narration:
   src: "/assets/audio/welcome-to-the-blog.mp3"
-  seconds: 37
+  seconds: 40
 ---
 
 This is the first post on the Maureen Avis blog.
