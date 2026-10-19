@@ -8,7 +8,7 @@ image: "/assets/images/posts/BustInDataCentre.jpg"
 draft: false
 narration:
   src: "/assets/audio/who-owns-the-thinking-machine.mp3"
-  seconds: 697
+  seconds: 700
 ---
 
 *Marx, machine learning, and the struggle over who profits when thinking gets cheaper.*
