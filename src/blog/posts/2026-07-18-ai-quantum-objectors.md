@@ -17,7 +17,7 @@ keywords:
 draft: false
 narration:
   src: "/assets/audio/ai-quantum-objectors.mp3"
-  seconds: 361
+  seconds: 364
 ---
 
 *Schrödinger's AI: simultaneously too stupid to write an email and clever enough to end the world.*
