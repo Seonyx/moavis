@@ -8,7 +8,7 @@ image: "/assets/images/Luddstatue.jpg"
 draft: false
 narration:
   src: "/assets/audio/of-molotovs-and-movable-type.mp3"
-  seconds: 619
+  seconds: 622
 ---
 
 *On the new Luddites, the old Luddites, and why the printing press won the argument.*
