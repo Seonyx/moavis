@@ -19,7 +19,7 @@ keywords:
 draft: false
 narration:
   src: "/assets/audio/a-week-of-out-of-process-calls.mp3"
-  seconds: 300
+  seconds: 303
 ---
 
 *A week spent everywhere except the main program.*
