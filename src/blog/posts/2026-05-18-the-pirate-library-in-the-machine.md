@@ -8,7 +8,7 @@ image: "/assets/images/posts/lawsuit18may2026.png"
 draft: false
 narration:
   src: "/assets/audio/the-pirate-library-in-the-machine.mp3"
-  seconds: 488
+  seconds: 491
 ---
 
 *David Baldacci may not be my cup of thriller, but his lawsuit points to the real question for AI fiction: not whether machines can write, but what they were fed before they opened their mouths.*
