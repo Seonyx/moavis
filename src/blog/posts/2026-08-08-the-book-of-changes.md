@@ -19,7 +19,7 @@ excerpt: "Storytelling predates writing by millennia. As HarperCollins warns of 
 draft: false
 narration:
   src: "/assets/audio/the-book-of-changes.mp3"
-  seconds: 313
+  seconds: 316
 ---
 
 *Storytelling is old, writing is new, and AI panic is newer still.*
