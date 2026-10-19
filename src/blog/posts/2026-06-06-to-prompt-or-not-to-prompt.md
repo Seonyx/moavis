@@ -8,7 +8,7 @@ image: "/assets/images/posts/WillShakes.jpg"
 draft: false
 narration:
   src: "/assets/audio/to-prompt-or-not-to-prompt.mp3"
-  seconds: 511
+  seconds: 514
 ---
 
 *Whether 'tis nobler to suffer the blank page...*
