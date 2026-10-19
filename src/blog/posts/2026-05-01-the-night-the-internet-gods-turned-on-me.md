@@ -8,7 +8,7 @@ image: "/assets/images/posts/ceab4275-dc92-42d6-8bcf-902e1ef61171_1408x768.webp"
 draft: false
 narration:
   src: "/assets/audio/the-night-the-internet-gods-turned-on-me.mp3"
-  seconds: 232
+  seconds: 235
 ---
 
 *An attempt to follow an author on Amazon turns into a small Greek tragedy about passwords, passkeys, and divine obstruction.*
