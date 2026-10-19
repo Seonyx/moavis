@@ -8,7 +8,7 @@ image: "/assets/images/posts/human-in-the-machine.png"
 draft: false
 narration:
   src: "/assets/audio/the-human-in-the-machine.mp3"
-  seconds: 440
+  seconds: 443
 ---
 
 *The Spark AI Can't Fake.*
