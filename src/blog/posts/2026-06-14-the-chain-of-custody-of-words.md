@@ -8,7 +8,7 @@ image: "/assets/images/posts/aifree.jpg"
 draft: false
 narration:
   src: "/assets/audio/the-chain-of-custody-of-words.mp3"
-  seconds: 652
+  seconds: 655
 ---
 
 *What happens to writing after it leaves your hands.*
