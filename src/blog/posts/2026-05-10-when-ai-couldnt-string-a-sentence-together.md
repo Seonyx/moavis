@@ -8,7 +8,7 @@ image: "/assets/images/posts/39e019ea-64d4-40c4-900a-47662ffaee86_1024x559.webp"
 draft: false
 narration:
   src: "/assets/audio/when-ai-couldnt-string-a-sentence-together.mp3"
-  seconds: 159
+  seconds: 162
 ---
 
 *AI-accelerated fiction is my game, but it started a lot further back than you might think.*
