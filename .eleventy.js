@@ -41,6 +41,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/BingSiteAuth.xml");
   eleventyConfig.addPassthroughCopy("src/_redirects");
+  eleventyConfig.addPassthroughCopy("src/_headers");
 
   // --- Date filters ---
   eleventyConfig.addFilter("readableDate", (date) =>

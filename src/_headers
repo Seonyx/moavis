@@ -1,0 +1,6 @@
+# Cloudflare Pages response headers
+/assets/books/*.epub
+  Content-Type: application/epub+zip
+
+/assets/books/*.m4b
+  Content-Type: audio/mp4
