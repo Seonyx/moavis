@@ -28,6 +28,9 @@ npm run build    # eleventy build + pagefind index (what Cloudflare runs)
 
 `_site/`, `node_modules/`, and `package-lock.json` are gitignored — never commit build output.
 
+This project's Baseline target is Baseline Widely available. Use the Modern Web Guidance
+skill (Google Chrome plugin) before writing or changing HTML, CSS or client-side JS.
+
 ## Architecture
 
 Eleventy config in `.eleventy.js`. Input `src/`, output `_site/`, includes `src/_includes`,
